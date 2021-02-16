@@ -23,6 +23,8 @@
 
 <link href="/css/style.css?v=1.1.0" rel="stylesheet">
 
+<link href="/css/hl_theme/atom-dark.css?v=1.1.0" rel="stylesheet">
+
 <link href="//cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" rel="stylesheet">
 
 <script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
@@ -47,8 +49,8 @@
   <input class="theme_preload_comment" value="">
   <input class="theme_blog_path" value="">
   <input id="theme_shortcut" value="true" />
-  <input id="theme_highlight_on" value="false" />
-  <input id="theme_code_copy" value="false" />
+  <input id="theme_highlight_on" value="true" />
+  <input id="theme_code_copy" value="true" />
 </div>
 
 
@@ -327,7 +329,20 @@
 <h2 id="HTML的概念"><a href="#HTML的概念" class="headerlink" title="HTML的概念"></a>HTML的概念</h2><h3 id="HTML（Hyper-Text-Markup-Langusage）"><a href="#HTML（Hyper-Text-Markup-Langusage）" class="headerlink" title="HTML（Hyper  Text  Markup  Langusage）"></a>HTML（<strong>H</strong>yper  <strong>T</strong>ext  <strong>M</strong>arkup  <strong>L</strong>angusage）</h3><h3 id="超文本标记语言"><a href="#超文本标记语言" class="headerlink" title="超文本标记语言"></a>超文本标记语言</h3><p><strong>HTML</strong>是用来<em>描述网页</em>的语言，它不是编程语言，而是一种<em>标记语言</em>——一套标记标签。</p>
 <p><strong>HTML文档</strong>包含了<em>HTML标签及文本内容</em>，也称web页面（网页）</p>
 <p><strong>HTML标签</strong>是由<em>尖括号</em>包围的关键字，并是<em>成对</em>出现的，前一个叫开始标签（开放标签），后一个叫结束标签（闭合标签）。</p>
-<h4 id="一个小小的例子"><a href="#一个小小的例子" class="headerlink" title="一个小小的例子"></a>一个小小的例子</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span><span class="comment">&lt;!--声明为 HTML5 文档--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span><span class="comment">&lt;!-- HTML 页面的根元素--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span><span class="comment">&lt;!--包含了文档的元（meta）数据--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span>&gt;</span><span class="comment">&lt;!-- 定义网页编码格式为 utf-8--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">title</span>&gt;</span>我是网页头<span class="tag">&lt;/<span class="name">title</span>&gt;</span><span class="comment">&lt;!-- 定义文章的标题--&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span><span class="comment">&lt;!--包含了页面的可视内容--&gt;</span></span><br><span class="line"> </span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>我是第一个标题<span class="tag">&lt;/<span class="name">h1</span>&gt;</span><span class="comment">&lt;!--定义一个大标题--&gt;</span></span><br><span class="line"> </span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>我是第一个段落。<span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="comment">&lt;!--定义一个小段落--&gt;</span></span><br><span class="line"> </span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h4 id="一个小小的例子"><a href="#一个小小的例子" class="headerlink" title="一个小小的例子"></a>一个小小的例子</h4><pre><code class="html">&lt;!DOCTYPE html&gt;&lt;!--声明为 HTML5 文档--&gt;
+&lt;html&gt;&lt;!-- HTML 页面的根元素--&gt;
+&lt;head&gt;&lt;!--包含了文档的元（meta）数据--&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;&lt;!-- 定义网页编码格式为 utf-8--&gt;
+&lt;title&gt;我是网页头&lt;/title&gt;&lt;!-- 定义文章的标题--&gt;
+&lt;/head&gt;
+&lt;body&gt;&lt;!--包含了页面的可视内容--&gt;
+
+&lt;h1&gt;我是第一个标题&lt;/h1&gt;&lt;!--定义一个大标题--&gt;
+
+&lt;p&gt;我是第一个段落。&lt;/p&gt;&lt;!--定义一个小段落--&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
 <p>生成后：</p>
 <p><img src="/image/example.png"></p>
 <h4 id="meta标签"><a href="#meta标签" class="headerlink" title="meta标签"></a>meta标签</h4><p>主要用于设置网页中的一些元数据（用户不可见）</p>
@@ -416,7 +431,12 @@
 <p>先定义映射图像名称：</p>
 <p><code>&lt;img src=&quot;我是图像地址&quot; usemap=&quot;我是映射图像名称&quot;&gt;</code></p>
 <p>再定义图像中的热区图像及其链接：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">map</span> <span class="attr">name</span>=<span class="string">&quot;我是上面的映射图像名称&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">area</span> <span class="attr">shape</span>=<span class="string">&quot;我是热区形状1&quot;</span> <span class="attr">coords</span>=<span class="string">&quot;我是热区坐标1&quot;</span> <span class="attr">href</span>=<span class="string">&quot;我是热区链接1&quot;</span> </span></span><br><span class="line"><span class="tag">      <span class="attr">target</span>=<span class="string">&quot;_blank&quot;</span>/&gt;</span> <span class="comment">&lt;!--新建一个窗口打开--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">area</span> <span class="attr">shape</span>=<span class="string">&quot;我是热区形状2&quot;</span> <span class="attr">coords</span>=<span class="string">&quot;我是热区坐标2&quot;</span> <span class="attr">href</span>=<span class="string">&quot;我是热区链接2&quot;</span></span></span><br><span class="line"><span class="tag">      <span class="attr">target</span>=<span class="string">&quot;_blank&quot;</span>/&gt;</span></span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+<pre><code class="html">&lt;map name=&quot;我是上面的映射图像名称&quot;&gt;
+&lt;area shape=&quot;我是热区形状1&quot; coords=&quot;我是热区坐标1&quot; href=&quot;我是热区链接1&quot; 
+      target=&quot;_blank&quot;/&gt; &lt;!--新建一个窗口打开--&gt;
+&lt;area shape=&quot;我是热区形状2&quot; coords=&quot;我是热区坐标2&quot; href=&quot;我是热区链接2&quot;
+      target=&quot;_blank&quot;/&gt;
+...</code></pre>
 <table border=2><!--宽度为2-->
     <tr>
     <td>shape</td>
@@ -435,7 +455,21 @@
 
 
 <p>展示下这表格的源代码(附带一些解释说明)：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">table</span> <span class="attr">border</span>=<span class="string">2</span>&gt;</span><span class="comment">&lt;!--表格宽度为2--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">td</span>&gt;</span>shape<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span>rect<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="comment">&lt;!--矩形--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span>circle<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="comment">&lt;!--圆形--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span>poly<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="comment">&lt;!--多边形，假设为n边形--&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">td</span>&gt;</span>coords<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span>x1,y1,x2,y2<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="comment">&lt;!--左上角顶点坐标为(x1,y1)，右下角顶点坐标为(x2,y2)--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span>x1,y1,r<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="comment">&lt;!--圆心坐标为(X1,y1)，半径为r--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span>x1,y1,x2,y2,...,xn,yn<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="comment">&lt;!--各顶点坐标依次为</span></span><br><span class="line"><span class="comment">           (x1,y1)、(x2,y2)、...、(xn,yn) --&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<pre><code class="html">&lt;table border=2&gt;&lt;!--表格宽度为2--&gt;
+    &lt;tr&gt;
+    &lt;td&gt;shape&lt;/td&gt;
+        &lt;td&gt;rect&lt;/td&gt;&lt;!--矩形--&gt;
+        &lt;td&gt;circle&lt;/td&gt;&lt;!--圆形--&gt;
+        &lt;td&gt;poly&lt;/td&gt;&lt;!--多边形，假设为n边形--&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+    &lt;td&gt;coords&lt;/td&gt;
+        &lt;td&gt;x1,y1,x2,y2&lt;/td&gt;&lt;!--左上角顶点坐标为(x1,y1)，右下角顶点坐标为(x2,y2)--&gt;
+        &lt;td&gt;x1,y1,r&lt;/td&gt;&lt;!--圆心坐标为(X1,y1)，半径为r--&gt;
+        &lt;td&gt;x1,y1,x2,y2,...,xn,yn&lt;/td&gt;&lt;!--各顶点坐标依次为
+           (x1,y1)、(x2,y2)、...、(xn,yn) --&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
 <p>看不懂就对了，接下来要介绍的就是HTML表格。</p>
 <h2 id="HTML表格"><a href="#HTML表格" class="headerlink" title="HTML表格"></a>HTML表格</h2><p>1.&lt;table&gt;:定义表格标签 </p>
 <p>2.&lt;tr&gt;:定义表格行</p>
@@ -451,14 +485,20 @@
 </ul>
 
 <p>源代码：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>&lt; ul &gt;定义无序列表<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>&lt; li &gt;定义列表项 <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<pre><code class="html">&lt;ul&gt;
+    &lt;li&gt;&lt; ul &gt;定义无序列表&lt;/li&gt;
+    &lt;li&gt;&lt; li &gt;定义列表项 &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
 <h3 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h3><ol>
     <li>< ol >定义有序标签</li>
         <li>< li >定义列表项</li>
 </ol>
 
 <p>​    源代码：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ol</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>&lt; ol &gt;定义有序标签<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>&lt; li &gt;定义列表项<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ol</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<pre><code class="html">&lt;ol&gt;
+    &lt;li&gt;&lt; ol &gt;定义有序标签&lt;/li&gt;
+    &lt;li&gt;&lt; li &gt;定义列表项&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
 <h3 id="定义标签"><a href="#定义标签" class="headerlink" title="定义标签"></a>定义标签</h3><dl>
     <dt>< dl ></dt>
         <dd>定义定义标签</dd>
@@ -469,9 +509,14 @@
 </dl>
 
 <p>源代码：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dl</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dt</span>&gt;</span>&lt; dl &gt;<span class="tag">&lt;/<span class="name">dt</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">dd</span>&gt;</span>定义定义标签<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dt</span>&gt;</span>&lt; dt &gt;<span class="tag">&lt;/<span class="name">dt</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">dd</span>&gt;</span>定义定义项目<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dt</span>&gt;</span>&lt; dd &gt;<span class="tag">&lt;/<span class="name">dt</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">dd</span>&gt;</span>定义定义项目的描述<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dl</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-
+<pre><code class="html">&lt;dl&gt;
+    &lt;dt&gt;&lt; dl &gt;&lt;/dt&gt;
+        &lt;dd&gt;定义定义标签&lt;/dd&gt;
+    &lt;dt&gt;&lt; dt &gt;&lt;/dt&gt;
+        &lt;dd&gt;定义定义项目&lt;/dd&gt;
+    &lt;dt&gt;&lt; dd &gt;&lt;/dt&gt;
+        &lt;dd&gt;定义定义项目的描述&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
 <h2 id="HTML表单"><a href="#HTML表单" class="headerlink" title="HTML表单"></a>HTML表单</h2><p>&lt;form&gt;元素定义HTML表单</p>
 <h3 id="文本域"><a href="#文本域" class="headerlink" title="文本域"></a>文本域</h3><p>用&lt;input type=”text”&gt;标签来实现</p>
 <form>
@@ -479,7 +524,9 @@
 </form>
 
 <p>源代码：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span>&gt;</span></span><br><span class="line">我是文本域: <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">name</span>=<span class="string">&quot;text fields&quot;</span> <span class="attr">value</span>=<span class="string">&quot;我是输入区&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<pre><code class="html">&lt;form&gt;
+我是文本域: &lt;input type=&quot;text&quot; name=&quot;text fields&quot; value=&quot;我是输入区&quot;&gt;
+&lt;/form&gt;</code></pre>
 <blockquote>
 <p>&lt;input&gt;属性</p>
 <p>1.它是最重要的表单元素</p>
@@ -493,7 +540,9 @@
 </form>
 
 <p>源代码：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">password</span> <span class="attr">name</span>=<span class="string">&quot;pwd&quot;</span> <span class="attr">placeholder</span>=<span class="string">&quot;我是密码&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<pre><code class="html">&lt;form&gt;
+    &lt;input type=password name=&quot;pwd&quot; placeholder=&quot;我是密码&quot;&gt;
+&lt;/form&gt;</code></pre>
 <blockquote>
 <p>注：密码不会明文显示，会以星号或圆点显示</p>
 </blockquote>
@@ -504,7 +553,10 @@
 </form>
 
 <p>源代码：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;radio&quot;</span> <span class="attr">name</span>=<span class="string">&quot;web front-end&quot;</span> <span class="attr">value</span>=<span class="string">&quot;html&quot;</span>&gt;</span>html<span class="tag">&lt;/<span class="name">br</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;radio&quot;</span> <span class="attr">name</span>=<span class="string">&quot;web front-end&quot;</span> <span class="attr">value</span>=<span class="string">&quot;css&quot;</span>&gt;</span>css</span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<pre><code class="html">&lt;form&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;web front-end&quot; value=&quot;html&quot;&gt;html&lt;/br&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;web front-end&quot; value=&quot;css&quot;&gt;css
+&lt;/form&gt;</code></pre>
 <h3 id="复选框"><a href="#复选框" class="headerlink" title="复选框"></a>复选框</h3><p>用&lt;input type=”checkbox”&gt;标签来实现</p>
 <form>
     <input type="checkbox" name="web front-end" value="html">html</br>
@@ -517,12 +569,14 @@
 </form>
 
 <p>源代码：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;submit&quot;</span> <span class="attr">value</span>=<span class="string">&quot;SUBMIT&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<pre><code class="html">&lt;form&gt;
+    &lt;input type=&quot;submit&quot; value=&quot;SUBMIT&quot;&gt;
+&lt;/form&gt;</code></pre>
 <h2 id="HTML框架"><a href="#HTML框架" class="headerlink" title="HTML框架"></a>HTML框架</h2><p>如下所示，便是框架：</p>
 <iframe src="https://sakuragi01.github.io/" frameborder=0 height=400 width=100></iframe> 
 
 <p>源代码：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">src</span>=<span class="string">&quot;https://sakuragi01.github.io/&quot;</span> <span class="attr">frameborder</span>=<span class="string">0</span> <span class="attr">height</span>=<span class="string">400</span> <span class="attr">width</span>=<span class="string">100</span>&gt;</span><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span> </span><br></pre></td></tr></table></figure>
+<pre><code class="html">&lt;iframe src=&quot;https://sakuragi01.github.io/&quot; frameborder=0 height=400 width=100&gt;&lt;/iframe&gt; </code></pre>
 <p>1.URL指的是网站</p>
 <p>2.height和width属性可以设置框架大小（单位：像素）</p>
 <p>3.frameborder属性可以设置边框</p>
