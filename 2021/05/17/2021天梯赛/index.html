@@ -302,7 +302,7 @@
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2021-05-17 17:50:40'>2021-05-17 17:26</time>
+            发布时间 : <time class="date" title='最后更新: 2021-05-17 18:16:09'>2021-05-17 17:26</time>
         
     </div>
     <div class="article-meta">
@@ -324,7 +324,7 @@
     
     <div class="toc-ref">
     
-        
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#L2-1-%E5%8C%85%E8%A3%85%E6%9C%BA"><span class="toc-text">L2-1 包装机</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0"><span class="toc-text">题目描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BE%93%E5%85%A5"><span class="toc-text">输入</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BE%93%E5%87%BA"><span class="toc-text">输出</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A0%B7%E4%BE%8B"><span class="toc-text">样例</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF"><span class="toc-text">解题思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#AC%E4%BB%A3%E7%A0%81"><span class="toc-text">AC代码</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#L2-3-%E6%B8%85%E7%82%B9%E4%BB%A3%E7%A0%81%E5%BA%93"><span class="toc-text">L2-3 清点代码库</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0-1"><span class="toc-text">题目描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BE%93%E5%85%A5-1"><span class="toc-text">输入</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BE%93%E5%87%BA-1"><span class="toc-text">输出</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A0%B7%E4%BE%8B-1"><span class="toc-text">样例</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF-1"><span class="toc-text">解题思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#AC%E4%BB%A3%E7%A0%81-1"><span class="toc-text">AC代码</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -340,8 +340,47 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><img src="/image/2021%E5%A4%A9%E6%A2%AF%E8%B5%9B/%E5%8C%85%E8%A3%85%E6%9C%BA.JPG"></p>
-
+        <h2 id="L2-1-包装机"><a href="#L2-1-包装机" class="headerlink" title="L2-1 包装机"></a><strong>L2-1 包装机</strong></h2><h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p>一种自动包装机的结构如图 1 所示。首先机器中有 <em>N</em> 条轨道，放置了一些物品。轨道下面有一个筐。当某条轨道的按钮被按下时，活塞向左推动，将轨道尽头的一件物品推落筐中。当 0 号按钮被按下时，机械手将抓取筐顶部的一件物品，放到流水线上。图 2 显示了顺序按下按钮 3、2、3、0、1、2、0 后包装机的状态。</p>
+<p><img src="/image/2021%E5%A4%A9%E6%A2%AF%E8%B5%9B/%E5%8C%85%E8%A3%85%E6%9C%BA1.JPG"></p>
+<p>图1 自动包装机的结构</p>
+<p><img src="/image/2021%E5%A4%A9%E6%A2%AF%E8%B5%9B/%E5%8C%85%E8%A3%85%E6%9C%BA2.JPG"></p>
+<p>图 2 顺序按下按钮 3、2、3、0、1、2、0 后包装机的状态</p>
+<p>一种特殊情况是，因为筐的容量是有限的，当筐已经满了，但仍然有某条轨道的按钮被按下时，系统应强制启动 0 号键，先从筐里抓出一件物品，再将对应轨道的物品推落。此外，如果轨道已经空了，再按对应的按钮不会发生任何事；同样的，如果筐是空的，按 0 号按钮也不会发生任何事。</p>
+<p>现给定一系列按钮操作，请你依次列出流水线上的物品。</p>
+<h3 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h3><p>输入第一行给出 3 个正整数 <em>N</em>（≤100）、<em>M</em>（≤1000）和 <em>S<strong>m</strong>a**x</em>（≤100），分别为轨道的条数（于是轨道从 1 到 <em>N</em> 编号）、每条轨道初始放置的物品数量、以及筐的最大容量。随后 <em>N</em> 行，每行给出 <em>M</em> 个英文大写字母，表示每条轨道的初始物品摆放。</p>
+<p>最后一行给出一系列数字，顺序对应被按下的按钮编号，直到 −1 标志输入结束，这个数字不要处理。数字间以空格分隔。题目保证至少会取出一件物品放在流水线上。</p>
+<h3 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h3><p>在一行中顺序输出流水线上的物品，不得有任何空格。</p>
+<h3 id="样例"><a href="#样例" class="headerlink" title="样例"></a>样例</h3><p><strong>Input</strong></p>
+<pre><code class="C++">3 4 4
+GPLT
+PATA
+OMSA
+3 2 3 0 1 2 0 2 2 0 -1</code></pre>
+<p><strong>Output</strong></p>
+<pre><code class="C++">MATA</code></pre>
+<h3 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h3><h3 id="AC代码"><a href="#AC代码" class="headerlink" title="AC代码"></a>AC代码</h3><h2 id="L2-3-清点代码库"><a href="#L2-3-清点代码库" class="headerlink" title="L2-3 清点代码库"></a><strong>L2-3 清点代码库</strong></h2><h3 id="题目描述-1"><a href="#题目描述-1" class="headerlink" title="题目描述"></a>题目描述</h3><p><img src="/image/2021%E5%A4%A9%E6%A2%AF%E8%B5%9B/%E6%B8%85%E7%82%B9%E4%BB%A3%E7%A0%81%E5%BA%93.jpg"></p>
+<p>上图转自新浪微博：“阿里代码库有几亿行代码，但其中有很多功能重复的代码，比如单单快排就被重写了几百遍。请设计一个程序，能够将代码库中所有功能重复的代码找出。各位大佬有啥想法，我当时就懵了，然后就挂了。。。”</p>
+<p>这里我们把问题简化一下：首先假设两个功能模块如果接受同样的输入，总是给出同样的输出，则它们就是功能重复的；其次我们把每个模块的输出都简化为一个整数（在 <strong>int</strong> 范围内）。于是我们可以设计一系列输入，检查所有功能模块的对应输出，从而查出功能重复的代码。你的任务就是设计并实现这个简化问题的解决方案。</p>
+<h3 id="输入-1"><a href="#输入-1" class="headerlink" title="输入"></a>输入</h3><p>输入在第一行中给出 2 个正整数，依次为 <em>N</em>（≤104）和 <em>M</em>（≤102），对应功能模块的个数和系列测试输入的个数。</p>
+<p>随后 <em>N</em> 行，每行给出一个功能模块的 <em>M</em> 个对应输出，数字间以空格分隔。</p>
+<h3 id="输出-1"><a href="#输出-1" class="headerlink" title="输出"></a>输出</h3><p>首先在第一行输出不同功能的个数 <em>K</em>。随后 <em>K</em> 行，每行给出具有这个功能的模块的个数，以及这个功能的对应输出。数字间以 1 个空格分隔，行首尾不得有多余空格。输出首先按模块个数非递增顺序，如果有并列，则按输出序列的递增序给出。</p>
+<p>注：所谓数列 { <em>A</em>1, …, <em>A**M</em> } 比 { <em>B</em>1, …, <em>B**M</em> } 大，是指存在 1≤<em>i</em>&lt;*M*，使得 *A*1=*B*1，…，*A**i*=*B**i* 成立，且 *A**i*+1&gt;<em>B**i</em>+1。</p>
+<h3 id="样例-1"><a href="#样例-1" class="headerlink" title="样例"></a>样例</h3><p><strong>Input</strong></p>
+<pre><code class="C++">7 3
+35 28 74
+-1 -1 22
+28 74 35
+-1 -1 22
+11 66 0
+35 28 74
+35 28 74</code></pre>
+<p><strong>Output</strong></p>
+<pre><code class="C++">4
+3 35 28 74
+2 -1 -1 22
+1 11 66 0
+1 28 74 35</code></pre>
+<h3 id="解题思路-1"><a href="#解题思路-1" class="headerlink" title="解题思路"></a>解题思路</h3><h3 id="AC代码-1"><a href="#AC代码-1" class="headerlink" title="AC代码"></a>AC代码</h3>
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达，可以在下面评论区评论。 </span>
     </div>
