@@ -112,7 +112,7 @@
 
 <ul>
     <li>
-        <div class="all active" data-rel="All">All
+        <div class="all active" data-rel="全部文章">全部文章
             
                 <small>(3)</small>
             
@@ -159,11 +159,11 @@
         
             <a class="about  hasFriend  site_url"
                
-               href="/about">About</a>
+               href="/about">关于</a>
         
         <a style="width: 50%"
                 
-                                           class="friends">Friends</a>
+                                           class="friends">友链</a>
         
     </div>
 </div>
@@ -178,7 +178,7 @@
     <div class="nav-right">
         <div class="friends-area">
     <div class="friends-title">
-        Links
+        友情链接
         <i class="iconfont icon-left"></i>
     </div>
     <div class="friends-content">
@@ -191,7 +191,7 @@
     <div class="right-top">
         <div id="default-panel">
             <i class="iconfont icon-search" data-title="搜索 快捷键 i"></i>
-            <div class="right-title">All</div>
+            <div class="right-title">全部文章</div>
             <i class="iconfont icon-file-tree" data-title="切换到大纲视图 快捷键 w"></i>
         </div>
         <div id="search-panel">
@@ -226,7 +226,7 @@
     
     <nav id="title-list-nav">
         
-        <a  class="All ACM "
+        <a  class="全部文章 ACM "
            href="/2021/05/16/Codeforces-Beta-Round-107/"
            data-tag="编程之美"
            data-author="" >
@@ -234,7 +234,7 @@
             <span class="post-date" title="2021-05-16 12:17:58">2021/05/16</span>
         </a>
         
-        <a  class="All web前端 "
+        <a  class="全部文章 web前端 "
            href="/2021/02/17/CSS/"
            data-tag="前端三大件"
            data-author="" >
@@ -242,7 +242,7 @@
             <span class="post-date" title="2021-02-17 13:29:34">2021/02/17</span>
         </a>
         
-        <a  class="All web前端 "
+        <a  class="全部文章 web前端 "
            href="/2021/01/20/HTML/"
            data-tag="前端三大件"
            data-author="" >
@@ -294,14 +294,14 @@
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2021-05-16 22:59:37'>2021-05-16 12:17</time>
+            发布时间 : <time class="date" title='最后更新: 2021-05-17 11:45:18'>2021-05-16 12:17</time>
         
     </div>
     <div class="article-meta">
         
         
         <span id="busuanzi_container_page_pv">
-            Views 👀 :<span id="busuanzi_value_page_pv">
+            阅读 :<span id="busuanzi_value_page_pv">
                 <span class="count-comment">
                     <span class="spinner">
                       <div class="cube1"></div>
@@ -363,8 +363,7 @@
 If you want to order a pizza, you should call: Fedorov, Rogulenko, Kaluzhin.
 If you want to go to a cafe with a wonderful girl, you should call: Melnikov.</code></pre>
 <h4 id="Example-2"><a href="#Example-2" class="headerlink" title="Example 2"></a>Example 2</h4><p><strong>Input</strong></p>
-<pre><code>    c++
-3
+<pre><code class="c++">3
 5 Gleb
 66-66-66
 55-55-55
@@ -581,7 +580,7 @@ int main()
         div(n);
         if(cnt==2&amp;&amp;res[1]*res[2]==n)//无论A怎么操作，B都胜
             puts(&quot;2&quot;);
-        //情形3
+    //情形3
         else
         &#123;
             puts(&quot;1&quot;);
@@ -589,8 +588,7 @@ int main()
         &#125;
     &#125;
     return 0;
-&#125;
-</code></pre>
+&#125;</code></pre>
 <h2 id="CF151D–Quantity-of-Strings"><a href="#CF151D–Quantity-of-Strings" class="headerlink" title="CF151D–Quantity of Strings"></a>CF151D–Quantity of Strings</h2><h3 id="题目描述-2"><a href="#题目描述-2" class="headerlink" title="题目描述"></a>题目描述</h3><p>Just in case somebody missed it: this winter is totally cold in Nvodsk! It is so cold that one gets funny thoughts. For example, let’s say there are strings with the length exactly <em>n</em>, based on the alphabet of size <em>m</em>. Any its substring with length equal to <em>k</em> is a palindrome. How many such strings exist? Your task is to find their quantity modulo 1000000007 (109 + 7). Be careful and don’t miss a string or two!</p>
 <p>Let us remind you that a string is a palindrome if it can be read the same way in either direction, from the left to the right and from the right to the left.</p>
 <h3 id="输入-2"><a href="#输入-2" class="headerlink" title="输入"></a>输入</h3><p>The first and only line contains three integers: <em>n</em>, <em>m</em> and <em>k</em> (1 ≤ <em>n</em>, <em>m</em>, <em>k</em> ≤ 2000).</p>
@@ -605,7 +603,82 @@ int main()
 <pre><code class="C++">2</code></pre>
 <h3 id="注意-2"><a href="#注意-2" class="headerlink" title="注意"></a>注意</h3><p>In the first sample only one string is valid: “a” (let’s denote the only letter of our alphabet as “a”).</p>
 <p>In the second sample (if we denote the alphabet letters as “a” and “b”) the following strings are valid: “aaaaa” and “bbbbb”.</p>
-<h3 id="解题思路-2"><a href="#解题思路-2" class="headerlink" title="解题思路"></a>解题思路</h3><h3 id="AC代码-2"><a href="#AC代码-2" class="headerlink" title="AC代码"></a>AC代码</h3>
+<h3 id="解题思路-2"><a href="#解题思路-2" class="headerlink" title="解题思路"></a>解题思路</h3><ol>
+<li>思维题，给定m个字符，用任意字符组成长度为n的字符串，并且其中任意的长度为k的字符串都为回文串</li>
+<li>对于n和k的变化,ans为不同的结果，ans为关于m的表达式,仅对n和k进行分类讨论</li>
+<li>分成三类，并对每个类别进行分类讨论</li>
+<li>理解回文串是关键！</li>
+</ol>
+<h3 id="AC代码-2"><a href="#AC代码-2" class="headerlink" title="AC代码"></a>AC代码</h3><pre><code class="c++">//思维题,理解题意还是关键
+//给定m个字符，用任意字符组成长度为n的字符串，并且其中任意的长度为k的字符串都为回文串
+//对于n和k的变化,ans为不同的结果，ans为关于m的表达式,仅对n和k进行分类讨论
+//分成三类，并对每个类别进行分类讨论
+#include &lt;iostream&gt;
+using namespace std;
+typedef long long LL;
+const int MOD=1e9+7;
+int main()
+&#123;
+    int n,m,k;
+    LL ans;
+    while(cin&gt;&gt;n&gt;&gt;m&gt;&gt;k)
+    &#123;
+        ans=1;//每次循环，对ans重新赋值
+        //1.回文串小于总串时
+        if(k&lt;n)
+        &#123;
+            //i.回文串为奇数且不为1时，
+              //例 4 2 3
+              //a b a b
+              //a a a a
+              //b a b a
+              //b b b b
+              //每个a都和a，b匹配
+              //每个b都和a，b匹配
+              //所以，同理可得，ans为m*m
+            if(k%2&amp;&amp;k!=1)
+                ans=m*m%MOD;
+            //ii.n中的每个数都可以是m中的任意个字母
+            else if(k==1)
+                for(int i=0; i&lt;n; i++)
+                &#123;
+                    ans=ans*m%MOD;
+                &#125;
+            //iii.回文串为偶数，只能n个相同的字母
+            else
+                ans=m;
+
+        &#125;
+        //2.回文串等于总串时
+        else if(k==n)
+        &#123;
+            //i.n为奇数时，中间为任意值，两边对称的各个数也为任意值
+            if(n%2)
+            &#123;
+                for(int i=0; i&lt;n/2+1; i++)
+                    ans=ans*m%MOD;
+            &#125;
+            //ii.n为偶数时，两边对称的数为任意值
+            else
+            &#123;
+                for(int i=0; i&lt;n/2; i++)
+                    ans=ans*m%MOD;
+            &#125;
+        &#125;
+        //3.回文串大于总串时
+        else
+        &#123;
+            //不符合题目要求，n中每个数为任意值
+            for(int i=0; i&lt;n; i++)
+            &#123;
+                ans=ans*m%MOD;
+            &#125;
+        &#125;
+        cout&lt;&lt;ans&lt;&lt;endl;
+    &#125;
+    return 0;
+&#125;</code></pre>
+
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达，可以在下面评论区评论。 </span>
     </div>
@@ -613,7 +686,7 @@ int main()
 
 
 <p>
-    <a  class="dashang" onclick="dashangToggle()">💰</a>
+    <a  class="dashang" onclick="dashangToggle()">赏</a>
 </p>
 
 
@@ -645,7 +718,7 @@ int main()
 <div class="shang_box">
     <a class="shang_close"  onclick="dashangToggle()">×</a>
     <div class="shang_tit">
-        <p>Help us with donation</p>
+        <p>喜欢就点赞,疼爱就打赏</p>
     </div>
     <div class="shang_payimg">
         <div class="pay_img">
@@ -654,7 +727,7 @@ int main()
         </div>
     </div>
     <div class="shang_payselect">
-        <span><label><input type="radio" name="pay" checked value="alipay">alipay</label></span><span><label><input type="radio" name="pay" value="weixin">weixin</label></span>
+        <span><label><input type="radio" name="pay" checked value="alipay">支付宝</label></span><span><label><input type="radio" name="pay" value="weixin">微信</label></span>
     </div>
 </div>
 
