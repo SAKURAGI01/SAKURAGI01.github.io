@@ -112,7 +112,7 @@
 
 <ul>
     <li>
-        <div class="all active" data-rel="全部文章">全部文章
+        <div class="all active" data-rel="All">All
             
                 <small>(4)</small>
             
@@ -159,11 +159,11 @@
         
             <a class="about  hasFriend  site_url"
                
-               href="/about">关于</a>
+               href="/about">About</a>
         
         <a style="width: 50%"
                 
-                                           class="friends">友链</a>
+                                           class="friends">Friends</a>
         
     </div>
 </div>
@@ -178,7 +178,7 @@
     <div class="nav-right">
         <div class="friends-area">
     <div class="friends-title">
-        友情链接
+        Links
         <i class="iconfont icon-left"></i>
     </div>
     <div class="friends-content">
@@ -191,7 +191,7 @@
     <div class="right-top">
         <div id="default-panel">
             <i class="iconfont icon-search" data-title="搜索 快捷键 i"></i>
-            <div class="right-title">全部文章</div>
+            <div class="right-title">All</div>
             <i class="iconfont icon-file-tree" data-title="切换到大纲视图 快捷键 w"></i>
         </div>
         <div id="search-panel">
@@ -226,7 +226,7 @@
     
     <nav id="title-list-nav">
         
-        <a  class="全部文章 ACM "
+        <a  class="All ACM "
            href="/2021/05/17/2021%E5%A4%A9%E6%A2%AF%E8%B5%9B/"
            data-tag="编程之美"
            data-author="" >
@@ -234,7 +234,7 @@
             <span class="post-date" title="2021-05-17 17:26:53">2021/05/17</span>
         </a>
         
-        <a  class="全部文章 ACM "
+        <a  class="All ACM "
            href="/2021/05/16/Codeforces-Beta-Round-107/"
            data-tag="编程之美"
            data-author="" >
@@ -242,7 +242,7 @@
             <span class="post-date" title="2021-05-16 12:17:58">2021/05/16</span>
         </a>
         
-        <a  class="全部文章 web前端 "
+        <a  class="All web前端 "
            href="/2021/02/17/CSS/"
            data-tag="前端三大件"
            data-author="" >
@@ -250,7 +250,7 @@
             <span class="post-date" title="2021-02-17 13:29:34">2021/02/17</span>
         </a>
         
-        <a  class="全部文章 web前端 "
+        <a  class="All web前端 "
            href="/2021/01/20/HTML/"
            data-tag="前端三大件"
            data-author="" >
@@ -302,14 +302,14 @@
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2021-05-17 18:16:09'>2021-05-17 17:26</time>
+            Created At : <time class="date" title='Updated At: 2021-05-18 09:31:02'>2021-05-17 17:26</time>
         
     </div>
     <div class="article-meta">
         
         
         <span id="busuanzi_container_page_pv">
-            阅读 :<span id="busuanzi_value_page_pv">
+            Views 👀 :<span id="busuanzi_value_page_pv">
                 <span class="count-comment">
                     <span class="spinner">
                       <div class="cube1"></div>
@@ -347,7 +347,7 @@
 <p>图 2 顺序按下按钮 3、2、3、0、1、2、0 后包装机的状态</p>
 <p>一种特殊情况是，因为筐的容量是有限的，当筐已经满了，但仍然有某条轨道的按钮被按下时，系统应强制启动 0 号键，先从筐里抓出一件物品，再将对应轨道的物品推落。此外，如果轨道已经空了，再按对应的按钮不会发生任何事；同样的，如果筐是空的，按 0 号按钮也不会发生任何事。</p>
 <p>现给定一系列按钮操作，请你依次列出流水线上的物品。</p>
-<h3 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h3><p>输入第一行给出 3 个正整数 <em>N</em>（≤100）、<em>M</em>（≤1000）和 <em>S<strong>m</strong>a**x</em>（≤100），分别为轨道的条数（于是轨道从 1 到 <em>N</em> 编号）、每条轨道初始放置的物品数量、以及筐的最大容量。随后 <em>N</em> 行，每行给出 <em>M</em> 个英文大写字母，表示每条轨道的初始物品摆放。</p>
+<h3 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h3><p>输入第一行给出 3 个正整数 <em>N</em>（≤100）、<em>M</em>（≤1000）和 <em>S<sub>max</sub></em> （≤100），分别为轨道的条数（于是轨道从 1 到                <em>N</em>  编号）、每条轨道初始放置的物品数量、以及筐的最大容量。随后 <em>N</em> 行，每行给出 <em>M</em> 个英文大写字母，表示每条轨道的初始物品摆放。</p>
 <p>最后一行给出一系列数字，顺序对应被按下的按钮编号，直到 −1 标志输入结束，这个数字不要处理。数字间以空格分隔。题目保证至少会取出一件物品放在流水线上。</p>
 <h3 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h3><p>在一行中顺序输出流水线上的物品，不得有任何空格。</p>
 <h3 id="样例"><a href="#样例" class="headerlink" title="样例"></a>样例</h3><p><strong>Input</strong></p>
@@ -358,13 +358,95 @@ OMSA
 3 2 3 0 1 2 0 2 2 0 -1</code></pre>
 <p><strong>Output</strong></p>
 <pre><code class="C++">MATA</code></pre>
-<h3 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h3><h3 id="AC代码"><a href="#AC代码" class="headerlink" title="AC代码"></a>AC代码</h3><h2 id="L2-3-清点代码库"><a href="#L2-3-清点代码库" class="headerlink" title="L2-3 清点代码库"></a><strong>L2-3 清点代码库</strong></h2><h3 id="题目描述-1"><a href="#题目描述-1" class="headerlink" title="题目描述"></a>题目描述</h3><p><img src="/image/2021%E5%A4%A9%E6%A2%AF%E8%B5%9B/%E6%B8%85%E7%82%B9%E4%BB%A3%E7%A0%81%E5%BA%93.jpg"></p>
+<h3 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h3><ol>
+<li><p> 基本数据结构：队列+栈 &lt;queue&gt; &lt;stack&gt;</p>
+</li>
+<li><p> 每条流水线分别为队列，框为栈</p>
+</li>
+<li><p> 根据每一步输入的操作，进行相应的操作</p>
+</li>
+<li><p>注意：每次操作可能需判断框或流水线是否为空</p>
+<blockquote>
+<p>队列和栈常用函数</p>
+<ol>
+<li><p>queue, 队列<br>size() 返回元素的个数<br>empty() 返回是否为空<br>push()  向队尾插入一个元素<br>front()  返回队头元素<br>back()  返回队尾元素<br>pop()  弹出队头元素<br>————分 割 线————</p>
+</li>
+<li><p>stack, 栈<br>size() 返回元素个数<br>empty() 返回是否为空<br>push()  向栈顶插入一个元素<br>top()  返回栈顶元素<br>pop()  弹出栈顶元素</p>
+</li>
+</ol>
+</blockquote>
+</li>
+</ol>
+<h3 id="AC代码"><a href="#AC代码" class="headerlink" title="AC代码"></a>AC代码</h3><pre><code class="c++">//基本数据结构：队列+栈 &lt;queue&gt; &lt;stack&gt;
+//每条流水线为分别队列，框为栈
+//根据每一步的操作，进行相应的操作
+//注意：每次操作可能需判断框或流水线是否为空
+//queue, 队列
+//size() 返回元素的个数
+//empty() 返回是否为空
+//push()  向队尾插入一个元素
+//front()  返回队头元素
+//back()  返回队尾元素
+//pop()  弹出队头元素
+//------------分 割 线------------
+//stack, 栈
+//size() 返回元素个数
+//empty() 返回是否为空
+//push()  向栈顶插入一个元素
+//top()  返回栈顶元素
+//pop()  弹出栈顶元素
+#include &lt;iostream&gt;
+#include &lt;stack&gt;
+#include &lt;queue&gt;
+using namespace std;
+int main()
+&#123;
+    int n,m,smax,i,j,x;
+    char t;
+    cin&gt;&gt;n&gt;&gt;m&gt;&gt;smax;
+    queue&lt;char&gt;a[n+1];
+    //用队列定义每条流水线
+    stack&lt;char&gt;b;
+    //用栈定义框
+    for(i=1;i&lt;=n;i++)
+        for(j=0;j&lt;m;j++)
+    &#123;
+        cin&gt;&gt;t;
+        a[i].push(t); //将每个元素存入x号流水线中
+    &#125;
+    while(cin&gt;&gt;x&amp;&amp;x!=-1)
+    &#123;
+        //1. 启动0号键
+        if(x==0&amp;&amp;!b.empty())
+        &#123;
+            cout&lt;&lt;b.top();//输出框的栈顶
+            b.pop();//弹出框的栈顶
+        &#125;
+        //2. 框未满时
+        if(x&gt;0&amp;&amp;b.size()&lt;smax&amp;&amp;a[x].size())
+        &#123;
+            b.push(a[x].front());//将x号流水线的队首存入框中
+            a[x].pop();//弹出x号流水线队首
+        &#125;
+        //3. 框已满时
+        else if(x&gt;0&amp;&amp;b.size()&gt;=smax&amp;&amp;a[x].size())
+        &#123;
+            cout&lt;&lt;b.top();
+            b.pop();//输出+存入
+            b.push(a[x].front());
+            a[x].pop();
+        &#125;
+    &#125;
+    return 0;
+&#125;</code></pre>
+<h2 id="L2-3-清点代码库"><a href="#L2-3-清点代码库" class="headerlink" title="L2-3 清点代码库"></a><strong>L2-3 清点代码库</strong></h2><h3 id="题目描述-1"><a href="#题目描述-1" class="headerlink" title="题目描述"></a>题目描述</h3><p><img src="/image/2021%E5%A4%A9%E6%A2%AF%E8%B5%9B/%E6%B8%85%E7%82%B9%E4%BB%A3%E7%A0%81%E5%BA%93.jpg"></p>
 <p>上图转自新浪微博：“阿里代码库有几亿行代码，但其中有很多功能重复的代码，比如单单快排就被重写了几百遍。请设计一个程序，能够将代码库中所有功能重复的代码找出。各位大佬有啥想法，我当时就懵了，然后就挂了。。。”</p>
 <p>这里我们把问题简化一下：首先假设两个功能模块如果接受同样的输入，总是给出同样的输出，则它们就是功能重复的；其次我们把每个模块的输出都简化为一个整数（在 <strong>int</strong> 范围内）。于是我们可以设计一系列输入，检查所有功能模块的对应输出，从而查出功能重复的代码。你的任务就是设计并实现这个简化问题的解决方案。</p>
-<h3 id="输入-1"><a href="#输入-1" class="headerlink" title="输入"></a>输入</h3><p>输入在第一行中给出 2 个正整数，依次为 <em>N</em>（≤104）和 <em>M</em>（≤102），对应功能模块的个数和系列测试输入的个数。</p>
+<h3 id="输入-1"><a href="#输入-1" class="headerlink" title="输入"></a>输入</h3><p>输入在第一行中给出 2 个正整数，依次为 <em>N</em>（≤10<sup>4</sup>）和 <em>M</em>（≤10<sup>2</sup>），对应功能模块的个数和系列测试输入的个数。</p>
 <p>随后 <em>N</em> 行，每行给出一个功能模块的 <em>M</em> 个对应输出，数字间以空格分隔。</p>
 <h3 id="输出-1"><a href="#输出-1" class="headerlink" title="输出"></a>输出</h3><p>首先在第一行输出不同功能的个数 <em>K</em>。随后 <em>K</em> 行，每行给出具有这个功能的模块的个数，以及这个功能的对应输出。数字间以 1 个空格分隔，行首尾不得有多余空格。输出首先按模块个数非递增顺序，如果有并列，则按输出序列的递增序给出。</p>
-<p>注：所谓数列 { <em>A</em>1, …, <em>A**M</em> } 比 { <em>B</em>1, …, <em>B**M</em> } 大，是指存在 1≤<em>i</em>&lt;*M*，使得 *A*1=*B*1，…，*A**i*=*B**i* 成立，且 *A**i*+1&gt;<em>B**i</em>+1。</p>
+<p>注：</p>
+<p>所谓数列 { <em>A<sub>1</sub></em>, …, <em>A<sub>M</sub></em> } 比 { <em>B<sub>1</sub></em>, …, <em>B<sub>M</sub></em> } 大，是指存在 1 ≤<em>i</em>&lt;M ，使得  A<sub>1</sub> = <em>B</em><sub>1</sub>，…，<em>A<sub>i</sub></em>=<em>B</em><sub>i</sub> 成立，且 <em>A<sub>i+1</sub></em> &gt;  <em>B<sub>i+1</sub></em> 。</p>
 <h3 id="样例-1"><a href="#样例-1" class="headerlink" title="样例"></a>样例</h3><p><strong>Input</strong></p>
 <pre><code class="C++">7 3
 35 28 74
@@ -388,7 +470,7 @@ OMSA
 
 
 <p>
-    <a  class="dashang" onclick="dashangToggle()">赏</a>
+    <a  class="dashang" onclick="dashangToggle()">💰</a>
 </p>
 
 
@@ -420,7 +502,7 @@ OMSA
 <div class="shang_box">
     <a class="shang_close"  onclick="dashangToggle()">×</a>
     <div class="shang_tit">
-        <p>喜欢就点赞,疼爱就打赏</p>
+        <p>Help us with donation</p>
     </div>
     <div class="shang_payimg">
         <div class="pay_img">
@@ -429,7 +511,7 @@ OMSA
         </div>
     </div>
     <div class="shang_payselect">
-        <span><label><input type="radio" name="pay" checked value="alipay">支付宝</label></span><span><label><input type="radio" name="pay" value="weixin">微信</label></span>
+        <span><label><input type="radio" name="pay" checked value="alipay">alipay</label></span><span><label><input type="radio" name="pay" value="weixin">weixin</label></span>
     </div>
 </div>
 
