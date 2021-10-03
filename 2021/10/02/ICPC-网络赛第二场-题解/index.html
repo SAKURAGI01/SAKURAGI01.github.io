@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>ICPC-网络赛第二场-题解 | Hexo</title>
+  <meta name="keywords" content=" 编程之美 ">
+  <meta name="description" content="ICPC-网络赛第二场-题解 | Hexo">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="啦啦啦">
+<meta property="og:type" content="website">
+<meta property="og:title" content="分类">
+<meta property="og:url" content="http://example.com/categories/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="啦啦啦">
+<meta property="og:locale">
+<meta property="article:published_time" content="2021-01-05T13:39:28.000Z">
+<meta property="article:modified_time" content="2021-09-18T02:38:21.675Z">
+<meta property="article:author" content="pigion">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="icon" href="/img/avatar.jpg">
+
+<link href="/css/style.css?v=1.1.0" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-dark.css?v=1.1.0" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" rel="stylesheet">
+
+<script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="/js/titleTip.js?v=1.1.0" ></script>
+
+<script src="//cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.1.0" ></script>
+
+<meta name="generator" content="Hexo 5.3.0"></head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="">
+  <input class="theme_blog_path" value="">
+  <input id="theme_shortcut" value="true" />
+  <input id="theme_highlight_on" value="true" />
+  <input id="theme_code_copy" value="true" />
+</div>
+
+
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/"
+   class="avatar_target">
+    <img class="avatar"
+         src="/img/avatar.jpg"/>
+</a>
+<div class="author">
+    <span>pigion</span>
+</div>
+
+<div class="icon">
+    
+        
+            <a title="jianshu"
+               href="https://www.jianshu.com/u/b6a6ac7901a8"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-jianshu"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="email"
+               href="mailto:354812696@qq.com"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-email"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="qq"
+               href="http://wpa.qq.com/msgrd?v=3&uin=354812696&site=qq&menu=yes"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-qq"></use>
+                    </svg>
+                
+            </a>
+        
+    
+</div>
+
+
+
+
+<ul>
+    <li>
+        <div class="all active" data-rel="All">All
+            
+                <small>(12)</small>
+            
+        </div>
+    </li>
+    
+        
+            
+                <li>
+                    <div data-rel="web前端">
+                        
+                        web前端
+                        <small>(2)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="数学建模">
+                        
+                        数学建模
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="制作游戏">
+                        
+                        制作游戏
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="ACM">
+                        
+                        ACM
+                        <small>(8)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+        
+            
+            
+            
+    </div>
+    <div>
+        
+            <a class="about  hasFriend  site_url"
+               
+               href="/about">About</a>
+        
+        <a style="width: 50%"
+                
+                                           class="friends">Friends</a>
+        
+    </div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="12">
+
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        Links
+        <i class="iconfont icon-left"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="http://a-c-dream.github.io/">远佬</a></li>
+            
+            <li><a target="_blank" href="http://4het.github.io/">源佬</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <div class="right-top">
+        <div id="default-panel">
+            <i class="iconfont icon-search" data-title="搜索 快捷键 i"></i>
+            <div class="right-title">All</div>
+            <i class="iconfont icon-file-tree" data-title="切换到大纲视图 快捷键 w"></i>
+        </div>
+        <div id="search-panel">
+            <i class="iconfont icon-left" data-title="返回"></i>
+            <input id="local-search-input" />
+            <label class="border-line" for="input"></label>
+            <i class="iconfont icon-case-sensitive" data-title="大小写敏感"></i>
+            <i class="iconfont icon-tag" data-title="标签"></i>
+        </div>
+        <div id="outline-panel" style="display: none">
+            <div class="right-title">大纲</div>
+            <i class="iconfont icon-list" data-title="切换到文章列表"></i>
+        </div>
+    </div>
+
+    <div class="tags-list">
+    <input id="tag-search" />
+    <div class="tag-wrapper">
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>编程之美</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>前端三大件</a>
+            </li>
+        
+    </div>
+
+</div>
+
+    
+    <nav id="title-list-nav">
+        
+        <a  class="All ACM "
+           href="/2021/10/02/ICPC-%E7%BD%91%E7%BB%9C%E8%B5%9B%E7%AC%AC%E4%BA%8C%E5%9C%BA-%E9%A2%98%E8%A7%A3/"
+           data-tag="编程之美"
+           data-author="" >
+            <span class="post-title" title="ICPC-网络赛第二场-题解">ICPC-网络赛第二场-题解</span>
+            <span class="post-date" title="2021-10-02 08:07:48">2021/10/02</span>
+        </a>
+        
+        <a  class="All ACM "
+           href="/2021/09/22/ICPC-%E7%BD%91%E7%BB%9C%E8%B5%9B%E7%AC%AC%E4%B8%80%E5%9C%BA-%E9%A2%98%E8%A7%A3/"
+           data-tag="编程之美"
+           data-author="" >
+            <span class="post-title" title="ICPC_网络赛第一场_补题">ICPC_网络赛第一场_补题</span>
+            <span class="post-date" title="2021-09-22 22:57:39">2021/09/22</span>
+        </a>
+        
+        <a  class="All ACM "
+           href="/2021/09/16/%E7%BA%A6%E7%91%9F%E5%A4%AB%E7%8E%AF-C-%E6%B1%82%E8%A7%A3/"
+           data-tag="编程之美"
+           data-author="" >
+            <span class="post-title" title="约瑟夫环 C++求解">约瑟夫环 C++求解</span>
+            <span class="post-date" title="2021-09-16 15:37:39">2021/09/16</span>
+        </a>
+        
+        <a  class="All 数学建模 "
+           href="/2021/08/30/Matlab-%E8%AF%AD%E6%B3%95/"
+           data-tag="编程之美"
+           data-author="" >
+            <span class="post-title" title="Matlab 语法">Matlab 语法</span>
+            <span class="post-date" title="2021-08-30 18:59:06">2021/08/30</span>
+        </a>
+        
+        <a  class="All ACM "
+           href="/2021/06/05/ACM%E9%98%9F%E5%86%85%E6%AF%94%E8%B5%9B%E8%A1%A5%E9%A2%98%EF%BC%88%E5%9B%9B%EF%BC%89/"
+           data-tag="编程之美"
+           data-author="" >
+            <span class="post-title" title="ACM队内比赛补题（四）">ACM队内比赛补题（四）</span>
+            <span class="post-date" title="2021-06-05 16:04:30">2021/06/05</span>
+        </a>
+        
+        <a  class="All ACM "
+           href="/2021/05/29/ACM%E9%98%9F%E5%86%85%E6%AF%94%E8%B5%9B%E8%A1%A5%E9%A2%98%EF%BC%88%E4%B8%89%EF%BC%89/"
+           data-tag="编程之美"
+           data-author="" >
+            <span class="post-title" title="ACM队内比赛补题（三）">ACM队内比赛补题（三）</span>
+            <span class="post-date" title="2021-05-29 20:15:29">2021/05/29</span>
+        </a>
+        
+        <a  class="All ACM "
+           href="/2021/05/23/ACM%E9%98%9F%E5%86%85%E6%AF%94%E8%B5%9B%E8%A1%A5%E9%A2%98%EF%BC%88%E4%BA%8C%EF%BC%89/"
+           data-tag="编程之美"
+           data-author="" >
+            <span class="post-title" title="ACM队内比赛补题（二）">ACM队内比赛补题（二）</span>
+            <span class="post-date" title="2021-05-23 10:54:22">2021/05/23</span>
+        </a>
+        
+        <a  class="All ACM "
+           href="/2021/05/17/2021%E5%A4%A9%E6%A2%AF%E8%B5%9B%E8%A1%A5%E9%A2%98/"
+           data-tag="编程之美"
+           data-author="" >
+            <span class="post-title" title="2021天梯赛补题">2021天梯赛补题</span>
+            <span class="post-date" title="2021-05-17 17:26:53">2021/05/17</span>
+        </a>
+        
+        <a  class="All ACM "
+           href="/2021/05/16/ACM%E9%98%9F%E5%86%85%E6%AF%94%E8%B5%9B%E8%A1%A5%E9%A2%98%EF%BC%88%E4%B8%80%EF%BC%89/"
+           data-tag="编程之美"
+           data-author="" >
+            <span class="post-title" title="ACM队内比赛补题（一）">ACM队内比赛补题（一）</span>
+            <span class="post-date" title="2021-05-16 12:17:58">2021/05/16</span>
+        </a>
+        
+        <a  class="All web前端 "
+           href="/2021/02/17/CSS/"
+           data-tag="前端三大件"
+           data-author="" >
+            <span class="post-title" title="CSS">CSS</span>
+            <span class="post-date" title="2021-02-17 13:29:34">2021/02/17</span>
+        </a>
+        
+        <a  class="All web前端 "
+           href="/2021/01/20/HTML/"
+           data-tag="前端三大件"
+           data-author="" >
+            <span class="post-title" title="HTML">HTML</span>
+            <span class="post-date" title="2021-01-20 17:35:54">2021/01/20</span>
+        </a>
+        
+        <a  class="All 制作游戏 "
+           href="/2021/01/20/%E9%A9%AC%E9%87%8C%E5%A5%A5%E6%B8%B8%E6%88%8F%E5%88%B6%E4%BD%9C/"
+           data-tag="编程之美"
+           data-author="" >
+            <span class="post-title" title="马里奥游戏制作">马里奥游戏制作</span>
+            <span class="post-date" title="2021-01-20 17:35:54">2021/01/20</span>
+        </a>
+        
+        <div id="no-item-tips">
+
+        </div>
+    </nav>
+    <div id="outline-list">
+    </div>
+</div>
+    </div>
+    <div class="hide-list">
+        <div class="semicircle" data-title="切换全屏 快捷键 s">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div id="post">
+    <div class="pjax">
+        <article id="post-ICPC-网络赛第二场-题解" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">ICPC-网络赛第二场-题解</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="ACM">ACM</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color5">编程之美</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+            Created At : <time class="date" title='Updated At: 2021-10-03 10:15:06'>2021-10-02 08:07</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        
+        <span id="busuanzi_container_page_pv">
+            Views 👀 :<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Problem-G-Limit"><span class="toc-text">Problem G. Limit</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0"><span class="toc-text">题目描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BE%93%E5%85%A5"><span class="toc-text">输入</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BE%93%E5%87%BA"><span class="toc-text">输出</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A0%B7%E4%BE%8B"><span class="toc-text">样例</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Example-1"><span class="toc-text">Example 1</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Example-2"><span class="toc-text">Example 2</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Example-3"><span class="toc-text">Example 3</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF"><span class="toc-text">解题思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#AC%E4%BB%A3%E7%A0%81"><span class="toc-text">AC代码</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Problem-J-Leaking-Roof"><span class="toc-text">Problem J. Leaking Roof</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0-1"><span class="toc-text">题目描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BE%93%E5%85%A5-1"><span class="toc-text">输入</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BE%93%E5%87%BA-1"><span class="toc-text">输出</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A0%B7%E4%BE%8B-1"><span class="toc-text">样例</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Example-1-1"><span class="toc-text">Example 1</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Example-2-1"><span class="toc-text">Example 2</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B3%A8%E6%84%8F"><span class="toc-text">注意</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF-1"><span class="toc-text">解题思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#AC%E4%BB%A3%E7%A0%81-1"><span class="toc-text">AC代码</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Problem-M-Addition"><span class="toc-text">Problem M. Addition</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0-2"><span class="toc-text">题目描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BE%93%E5%85%A5-2"><span class="toc-text">输入</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BE%93%E5%87%BA-2"><span class="toc-text">输出</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A0%B7%E4%BE%8B-2"><span class="toc-text">样例</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B3%A8%E6%84%8F-1"><span class="toc-text">注意</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF-2"><span class="toc-text">解题思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#AC%E4%BB%A3%E7%A0%81-2"><span class="toc-text">AC代码</span></a></li></ol></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Problem-G-Limit"><a href="#Problem-G-Limit" class="headerlink" title="Problem G. Limit"></a>Problem G. Limit</h2><h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p>Given 2n integers, a1, a2, . . . , an, b1, b2, . . . , bn, and an integer t. You need to calculate:<br>$$<br>\lim_{x \to  0 }\frac{\sum _ { i = 1 } ^ { n} a _ i\cdot ln(1 + b_i\cdot x)<br>}{x^t}<br>.<br>$$</p>
+<h3 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h3><p>The first line consists of two integers n, t.</p>
+<p> In the following n lines, the i-th line consists of two integers a<sub>i</sub> , b<sub>i</sub> .</p>
+<p> 1 ≤ n ≤ 100000, −100 ≤ a<sub>i</sub> , b<sub>i</sub> ≤ 100, 0 ≤ t ≤ 5.</p>
+<h3 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h3><p>Please output the result of this limit. If the result is ∞, please output “infinity”(without quotes). And if the result is an integer, please output this integer directly. Otherwise, the answer must be a b , such that a and b are coprime and b ≥ 2, please output “a/b”.</p>
+<h3 id="样例"><a href="#样例" class="headerlink" title="样例"></a>样例</h3><h4 id="Example-1"><a href="#Example-1" class="headerlink" title="Example 1"></a>Example 1</h4><p><strong>Input</strong></p>
+<pre><code class="C++">2 2
+1 1
+1 -1</code></pre>
+<p><strong>Output</strong></p>
+<pre><code class="C++">-1</code></pre>
+<h4 id="Example-2"><a href="#Example-2" class="headerlink" title="Example 2"></a>Example 2</h4><p><strong>Input</strong></p>
+<pre><code class="C++">2 1
+1 1
+1 -1</code></pre>
+<p><strong>Output</strong></p>
+<pre><code class="C++">0</code></pre>
+<h4 id="Example-3"><a href="#Example-3" class="headerlink" title="Example 3"></a>Example 3</h4><p><strong>Input</strong></p>
+<pre><code class="C++">2 3
+1 1
+1 -1</code></pre>
+<p><strong>Output</strong></p>
+<pre><code class="c++">infinity</code></pre>
+<h3 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h3><ol>
+<li>这题就是考察基本的数学知识–微积分</li>
+<li>用洛必达法则在草稿纸上模拟一下求导过程，就能写出程序</li>
+<li>求导未满t次分子不为0，则inf</li>
+</ol>
+<h3 id="AC代码"><a href="#AC代码" class="headerlink" title="AC代码"></a>AC代码</h3><pre><code class="C++">#include &lt;iostream&gt;
+#include &lt;cmath&gt;
+#include&lt;algorithm&gt;
+
+using namespace std;
+
+typedef long long LL;
+
+const LL N = 1e5 + 10;
+
+LL a[N], b[N], flag;
+
+LL c[6] = &#123;0, 1, 1, 2, 6, 24&#125;;
+
+LL gcd(LL a, LL b)
+&#123;
+    return b ? gcd(b, a % b) : a;
+&#125;
+
+int main()
+&#123;
+   LL n, t, sum = 0;
+
+    cin &gt;&gt; n &gt;&gt; t;
+
+    for (LL i = 0; i &lt; n; i ++ )
+    &#123;
+        scanf(&quot;%lld%lld&quot;, &amp;a[i], &amp;b[i]);
+    &#125;
+
+    for (LL i = 1; i &lt;= t; i ++ )
+    &#123;
+        sum = 0;
+        for (LL j = 0; j &lt; n; j ++ )
+        &#123;
+            sum += c[i] * pow(-1, i - 1) * a[j] * pow(b[j], i);
+        &#125;
+        if (sum &amp;&amp; i &lt; t) 
+        &#123;
+            flag = 1;//未满t次，分子不为0
+            break;
+        &#125;
+    &#125;
+
+    if (flag) puts(&quot;infinity&quot;);
+    else
+    &#123;
+        LL tt = 1;
+
+        for (LL i = 2; i &lt;= t; i ++ ) tt *= i;
+
+        LL d = abs(__gcd(tt, sum));
+        tt /= d, sum /= d;
+
+        if (tt == 1) printf(&quot;%lld\n&quot;, sum);//特判
+        else printf(&quot;%lld/%lld\n&quot;, sum, tt);
+    &#125;
+
+    return 0;
+&#125;</code></pre>
+<h2 id="Problem-J-Leaking-Roof"><a href="#Problem-J-Leaking-Roof" class="headerlink" title="Problem J. Leaking Roof"></a>Problem J. Leaking Roof</h2><h3 id="题目描述-1"><a href="#题目描述-1" class="headerlink" title="题目描述"></a>题目描述</h3><p>Grandpa Are lives in an old house. Now it is the heavy rain that occurs only once in a hundred years, but the roof of Grandpa Are’s house leaks. His roof can be viewed as a n × n grid, and each square has a height. Denote the height of the square with coordinate (i, j) by h<sub>i,j</sub> meters. Now the rainfall is m millimeters, meaning that the incoming rain on every square is m millimeters.</p>
+<p>Since the roof is not flat, the water flows, and the water on a square can only flow to an adjacent square with a strictly smaller height. Two squares are adjacent when they share a common edge. Also, since the water level is subtle compared with the difference in heights of the squares, water will NOT flow to adjacent squares with the same height due to surface tension. Furthermore, the water equally divides among all possible directions. Besides, the roof leaks. To be specific, if a square has a height of 0, it leaks. </p>
+<p>Grandpa Are wants to know how much water flows to each leaking square after a long time. The water flows to a square includes the one from the incoming rain and the one from the adjacent squares. He asks you to calculate for him.</p>
+<h3 id="输入-1"><a href="#输入-1" class="headerlink" title="输入"></a>输入</h3><p>The first line contains two integers n and m.</p>
+<p>The next n lines contains n integers in each line. The i-th line contains integer h<sub>i,1</sub>, . . . , h<sub>i,n</sub>, separated by a space, meaning the height of the squares in the i-th row. There is a space in the end of each line, and there is an eoln in the end of the n-th line. </p>
+<p>It is guaranteed that 1 ≤ n ≤ 500 and 0 ≤ m, h<sub>i,j</sub> ≤ 10000.</p>
+<h3 id="输出-1"><a href="#输出-1" class="headerlink" title="输出"></a>输出</h3><p>There are n lines in the output, and each line contains n real numbers. The i-th line contains a<sub>i,1</sub>, . . . , a<sub>i,n</sub>, separated by a space, meaning the height of water flows to the corresponding square at last, or 0 if the square is not leaking.</p>
+<p> Your answer will be considered correct if and only if the absolute or relative error of your answer to the correct answer is less than or equal to 10<sup>−6</sup> . Also, there is a space in the end of each line, and there is an eoln in the end of the n-th line.</p>
+<h3 id="样例-1"><a href="#样例-1" class="headerlink" title="样例"></a>样例</h3><h4 id="Example-1-1"><a href="#Example-1-1" class="headerlink" title="Example 1"></a>Example 1</h4><p><strong>Input</strong></p>
+<pre><code class="C++">3 1
+0 1 2
+1 2 3
+2 3 4</code></pre>
+<p><strong>Output</strong></p>
+<pre><code class="C++">9.000000 0 0
+0 0 0
+0 0 0</code></pre>
+<h4 id="Example-2-1"><a href="#Example-2-1" class="headerlink" title="Example 2"></a>Example 2</h4><p><strong>Input</strong></p>
+<pre><code class="C++">3 1
+0 1 0
+1 1 1
+0 1 0</code></pre>
+<p><strong>Output</strong></p>
+<pre><code class="C++">2.000000 0 2.000000
+0 0 0
+2.000000 0 2.000000</code></pre>
+<h3 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h3><p>In the first sample, all water flows to the leaking square (1,1). In the second sample, notice that the water in the square (2,2) will NOT flow. Although it is not the case in real life, it is the case in this problem due to the imaginary surface tension.</p>
+<h3 id="解题思路-1"><a href="#解题思路-1" class="headerlink" title="解题思路"></a>解题思路</h3><ol>
+<li>这是一道模拟题</li>
+<li>水是从高处往低处流的，只需要把它们按照从高到低的顺序排序就行</li>
+<li>在把高处的水进行分流的时候，要先统计周围有多少低位，在进行分流，这就要用到方向数组</li>
+</ol>
+<h3 id="AC代码-1"><a href="#AC代码-1" class="headerlink" title="AC代码"></a>AC代码</h3><pre><code class="c++">#include &lt;iostream&gt;
+#include &lt;algorithm&gt;
+
+using namespace std;
+
+const int N = 510;
+
+int h[N][N];
+double s[N][N];
+
+int dx[4] = &#123;1, 0, -1, 0&#125;;
+int dy[4] = &#123;0, 1, 0, -1&#125;;
+
+struct Node
+&#123;
+    int i, j, h;
+    bool operator &lt; (const Node p)
+    &#123;
+        return h &gt; p.h;//sort数组功能预设
+    &#125;
+&#125;a[N * N];
+
+int main()
+&#123;
+    int n, m, cnt = 0;
+
+    scanf(&quot;%d%d&quot;, &amp;n, &amp;m);
+
+    for (int i = 1; i &lt;= n; i ++ )
+        for (int j = 1; j &lt;= n; j ++ )
+            &#123;
+                scanf(&quot;%d&quot;, &amp;h[i][j]);
+                cnt ++ ;
+                a[cnt].i = i;
+                a[cnt].j = j;
+                a[cnt].h = h[i][j];//用结构体存入坐标和高度
+                s[i][j] = m;
+            &#125;
+
+    int nn = n * n;
+
+    sort(a + 1, a + nn + 1);
+
+    for (int i = 1; i &lt;= nn; i ++ )
+    &#123;
+        int sum = 0;
+        for (int k = 0; k &lt; 4; k ++ )
+        &#123;
+            int x = a[i].i + dx[k], y = a[i].j + dy[k];
+
+            if (x &gt; 0 &amp;&amp; x &lt;= n &amp;&amp; y &gt; 0 &amp;&amp; y &lt;= n &amp;&amp; h[x][y] &lt; h[a[i].i][a[i].j])
+                sum ++ ;//查询周围有多少低水位
+        &#125;
+        if (sum)
+        &#123;
+            for (int k = 0; k &lt; 4; k ++ )
+            &#123;
+                int x = a[i].i + dx[k], y = a[i].j + dy[k];
+
+                if (x &gt; 0 &amp;&amp; x &lt;= n &amp;&amp; y &gt; 0 &amp;&amp; y &lt;= n &amp;&amp; h[x][y] &lt; h[a[i].i][a[i].j])
+                    s[x][y] += s[a[i].i][a[i].j] / sum;//分流
+            &#125;
+        &#125;
+    &#125;
+
+    for (int i = 1; i &lt;= n; i ++ )
+    &#123;
+        for (int j = 1; j &lt;= n; j ++ )
+        &#123;
+            if (h[i][j]) printf(&quot;0 &quot;);//有高度的都为0,只有水位为0的输出
+            else printf(&quot;%.6lf &quot;, s[i][j]);
+        &#125;
+        printf(&quot;\n&quot;);
+    &#125;
+
+    return 0;
+&#125;</code></pre>
+<h2 id="Problem-M-Addition"><a href="#Problem-M-Addition" class="headerlink" title="Problem M. Addition"></a>Problem M. Addition</h2><h3 id="题目描述-2"><a href="#题目描述-2" class="headerlink" title="题目描述"></a>题目描述</h3><p>The numbers in the computer are usually stored in binary form. But in Little A’s computer, the numbers are stored in a different way. The computer uses n bits to store a number. The value it stores is$\sum _ { i = 0 } ^ { n - 1} v _ isign_i2^i$, where v is an array of length n containing only 0 and 1, and sgn is a predefined array of length n containing only −1 and 1. It is not difficult to find that every expressible integer has a unique expression. Little A gives you the binary representation of a and b in his computer, and you should report the binary representation of a + b in his computer. It is guaranteed that max{|a|, |b|} ≤ 10<sup>8</sup> , and all integers in [−10<sup>9</sup> , 10<sup>9</sup> ] can be expressed in his computer.</p>
+<h3 id="输入-2"><a href="#输入-2" class="headerlink" title="输入"></a>输入</h3><p>The first line contains an integer n, which represents the number of bits used to store an integer. </p>
+<p>The second line contains n integers, and the i-th of them represents sgn<sub>i−1</sub>. </p>
+<p>The third line contains n integers, and the i-th of them represents va<sub>i−1</sub>. The value of a is $\sum _ { i = 0 } ^ { n - 1} v a_ isign_i2^i$. </p>
+<p>The forth line contains n integers, and the i-th of them represents vb<sub>i−1</sub>. The value of b is $\sum _ { i = 0 } ^ { n - 1} v b_ isign_i2^i$. </p>
+<p>It is guaranteed that 32 ≤ n ≤ 60, sgn<sub>i</sub>∈ {−1, 1}, va<sub>i</sub> , vb<sub>i</sub> ∈ {0, 1}, and max{|a|, |b|} ≤ 10<sup>8</sup> .</p>
+<h3 id="输出-2"><a href="#输出-2" class="headerlink" title="输出"></a>输出</h3><p>Output one line containing n integers, separated by spaces. The i-th of them represents vc<sub>i−1</sub>. There should be no extra spaces at the end of the line. </p>
+<p>You should guarantee that a + b = $\sum _ { i = 0 } ^ { n - 1} v c_ isign_i2^i$. </p>
+<p>\Your output must be in a single line.</p>
+<h3 id="样例-2"><a href="#样例-2" class="headerlink" title="样例"></a>样例</h3><p><strong>Input</strong></p>
+<pre><code class="C++">32
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 -1
+1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</code></pre>
+<p><strong>Output</strong></p>
+<pre><code class="C++">0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</code></pre>
+<h3 id="注意-1"><a href="#注意-1" class="headerlink" title="注意"></a>注意</h3><p>There is no extra line breaks in the test cases. It’s just for the convience of displaying.The correct form can be found in the online statement. </p>
+<p>Your output must be in a single line.</p>
+<h3 id="解题思路-2"><a href="#解题思路-2" class="headerlink" title="解题思路"></a>解题思路</h3><ol>
+<li>理解二进制进位的原则，并简化符号机制</li>
+<li>输入和输出都共用同一个符号，所以，只需控制进位的符号即可</li>
+</ol>
+<h3 id="AC代码-2"><a href="#AC代码-2" class="headerlink" title="AC代码"></a>AC代码</h3><pre><code class="c++">#include &lt;iostream&gt;
+
+using namespace std;
+
+int a[100], b[100], p[100], c[100];
+
+int main()
+&#123;
+    int n, cr = 0;//cr表示进位
+
+    scanf(&quot;%d&quot;, &amp;n);
+
+    for (int i = 0; i &lt; n; i ++ ) scanf(&quot;%d&quot;, &amp;p[i]);
+    for (int i = 0; i &lt; n; i ++ ) scanf(&quot;%d&quot;, &amp;a[i]);
+    for (int i = 0; i &lt; n; i ++ ) scanf(&quot;%d&quot;, &amp;b[i]);
+
+
+    for (int i = 0; i &lt; n; i ++ )
+    &#123;
+        cr *= p[i];//若符号不同，本质上只在进位上产生差异
+        int sum = a[i] + b[i] + cr;
+        if (sum == 0 || sum == 1) c[i] = sum, cr = 0;
+        else if (sum == -1) c[i] = 1, cr = -1;//向后取一位
+        else if (sum == 2) c[i] = 0, cr = 1;
+        else if (sum == 3) c[i] = 1, cr = 1;
+        cr *= p[i];
+    &#125;
+
+    for (int i = 0; i &lt; n; i ++ )
+    &#123;
+        if (i != n - 1) printf(&quot;%d &quot;, c[i]);
+        else printf(&quot;%d\n&quot;, c[i]);
+    &#125;
+
+
+    return 0;
+&#125;</code></pre>
+
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达，可以在下面评论区评论。 </span>
+    </div>
+</article>
+
+
+<p>
+    <a  class="dashang" onclick="dashangToggle()">💰</a>
+</p>
+
+
+
+
+
+
+    
+        <!-- MathJax配置，可通过单美元符号书写行内公式等 -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    "HTML-CSS": {
+        preferredFont: "TeX",
+        availableFonts: ["STIX","TeX"],
+        linebreaks: { automatic:true },
+        EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+        inlineMath: [ ["$", "$"], ["\\(","\\)"] ],
+        processEscapes: true,
+        ignoreClass: "tex2jax_ignore|dno",
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+        equationNumbers: { autoNumber: "AMS" },
+        noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } },
+        Macros: { href: "{}" }
+    },
+    messageStyle: "none"
+    });
+</script>
+<!-- 给MathJax元素添加has-jax class -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+<!-- 通过连接CDN加载MathJax的js代码 -->
+<script type="text/javascript" async
+        src="//cdn.jsdelivr.net/npm/mathjax@2.7.8/unpacked/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<input type="hidden" id="MathJax-js"
+        value="//cdn.jsdelivr.net/npm/mathjax@2.7.8/unpacked/MathJax.js?config=TeX-MML-AM_CHTML">
+</input>
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">
+    ©2016-2020 Yelog
+</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+
+<div class="hide_box" onclick="dashangToggle()"></div>
+<div class="shang_box">
+    <a class="shang_close"  onclick="dashangToggle()">×</a>
+    <div class="shang_tit">
+        <p>Help us with donation</p>
+    </div>
+    <div class="shang_payimg">
+        <div class="pay_img">
+            <img src="/img/alipay.jpg" class="alipay" title="扫码支持">
+            <img src="/img/weixin.jpg" class="weixin" title="扫码支持">
+        </div>
+    </div>
+    <div class="shang_payselect">
+        <span><label><input type="radio" name="pay" checked value="alipay">alipay</label></span><span><label><input type="radio" name="pay" value="weixin">weixin</label></span>
+    </div>
+</div>
+
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.1.0" ></script>
+
+<script src="/js/script.js?v=1.1.0" ></script>
+<script>
+    var img_resize = 'default';
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $("#post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+        $("input[name=pay]").on("click", function () {
+            if($("input[name=pay]:checked").val()=="weixin"){
+                $(".shang_box .shang_payimg .pay_img").addClass("weixin_img");
+            } else {
+                $(".shang_box .shang_payimg .pay_img").removeClass("weixin_img");
+            }
+        })
+        
+
+        /*高亮代码块行号*/
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+    function dashangToggle() {
+        $(".shang_box").fadeToggle();
+        $(".hide_box").fadeToggle();
+    }
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+
+    
+</style>
+
+
+
+
+
+
+
+</html>

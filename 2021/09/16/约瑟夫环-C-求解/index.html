@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>约瑟夫环 C++求解 | Hexo</title>
+  <meta name="keywords" content=" 编程之美 ">
+  <meta name="description" content="约瑟夫环 C++求解 | Hexo">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="啦啦啦">
+<meta property="og:type" content="website">
+<meta property="og:title" content="分类">
+<meta property="og:url" content="http://example.com/categories/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="啦啦啦">
+<meta property="og:locale">
+<meta property="article:published_time" content="2021-01-05T13:39:28.000Z">
+<meta property="article:modified_time" content="2021-09-18T02:38:21.675Z">
+<meta property="article:author" content="pigion">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="icon" href="/img/avatar.jpg">
+
+<link href="/css/style.css?v=1.1.0" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-dark.css?v=1.1.0" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" rel="stylesheet">
+
+<script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="/js/titleTip.js?v=1.1.0" ></script>
+
+<script src="//cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.1.0" ></script>
+
+<meta name="generator" content="Hexo 5.3.0"></head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="">
+  <input class="theme_blog_path" value="">
+  <input id="theme_shortcut" value="true" />
+  <input id="theme_highlight_on" value="true" />
+  <input id="theme_code_copy" value="true" />
+</div>
+
+
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/"
+   class="avatar_target">
+    <img class="avatar"
+         src="/img/avatar.jpg"/>
+</a>
+<div class="author">
+    <span>pigion</span>
+</div>
+
+<div class="icon">
+    
+        
+            <a title="jianshu"
+               href="https://www.jianshu.com/u/b6a6ac7901a8"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-jianshu"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="email"
+               href="mailto:354812696@qq.com"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-email"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="qq"
+               href="http://wpa.qq.com/msgrd?v=3&uin=354812696&site=qq&menu=yes"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-qq"></use>
+                    </svg>
+                
+            </a>
+        
+    
+</div>
+
+
+
+
+<ul>
+    <li>
+        <div class="all active" data-rel="All">All
+            
+                <small>(12)</small>
+            
+        </div>
+    </li>
+    
+        
+            
+                <li>
+                    <div data-rel="web前端">
+                        
+                        web前端
+                        <small>(2)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="数学建模">
+                        
+                        数学建模
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="制作游戏">
+                        
+                        制作游戏
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="ACM">
+                        
+                        ACM
+                        <small>(8)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+        
+            
+            
+            
+    </div>
+    <div>
+        
+            <a class="about  hasFriend  site_url"
+               
+               href="/about">About</a>
+        
+        <a style="width: 50%"
+                
+                                           class="friends">Friends</a>
+        
+    </div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="12">
+
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        Links
+        <i class="iconfont icon-left"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="http://a-c-dream.github.io/">远佬</a></li>
+            
+            <li><a target="_blank" href="http://4het.github.io/">源佬</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <div class="right-top">
+        <div id="default-panel">
+            <i class="iconfont icon-search" data-title="搜索 快捷键 i"></i>
+            <div class="right-title">All</div>
+            <i class="iconfont icon-file-tree" data-title="切换到大纲视图 快捷键 w"></i>
+        </div>
+        <div id="search-panel">
+            <i class="iconfont icon-left" data-title="返回"></i>
+            <input id="local-search-input" />
+            <label class="border-line" for="input"></label>
+            <i class="iconfont icon-case-sensitive" data-title="大小写敏感"></i>
+            <i class="iconfont icon-tag" data-title="标签"></i>
+        </div>
+        <div id="outline-panel" style="display: none">
+            <div class="right-title">大纲</div>
+            <i class="iconfont icon-list" data-title="切换到文章列表"></i>
+        </div>
+    </div>
+
+    <div class="tags-list">
+    <input id="tag-search" />
+    <div class="tag-wrapper">
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>编程之美</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>前端三大件</a>
+            </li>
+        
+    </div>
+
+</div>
+
+    
+    <nav id="title-list-nav">
+        
+        <a  class="All ACM "
+           href="/2021/10/02/ICPC-%E7%BD%91%E7%BB%9C%E8%B5%9B%E7%AC%AC%E4%BA%8C%E5%9C%BA-%E9%A2%98%E8%A7%A3/"
+           data-tag="编程之美"
+           data-author="" >
+            <span class="post-title" title="ICPC-网络赛第二场-题解">ICPC-网络赛第二场-题解</span>
+            <span class="post-date" title="2021-10-02 08:07:48">2021/10/02</span>
+        </a>
+        
+        <a  class="All ACM "
+           href="/2021/09/22/ICPC-%E7%BD%91%E7%BB%9C%E8%B5%9B%E7%AC%AC%E4%B8%80%E5%9C%BA-%E9%A2%98%E8%A7%A3/"
+           data-tag="编程之美"
+           data-author="" >
+            <span class="post-title" title="ICPC_网络赛第一场_补题">ICPC_网络赛第一场_补题</span>
+            <span class="post-date" title="2021-09-22 22:57:39">2021/09/22</span>
+        </a>
+        
+        <a  class="All ACM "
+           href="/2021/09/16/%E7%BA%A6%E7%91%9F%E5%A4%AB%E7%8E%AF-C-%E6%B1%82%E8%A7%A3/"
+           data-tag="编程之美"
+           data-author="" >
+            <span class="post-title" title="约瑟夫环 C++求解">约瑟夫环 C++求解</span>
+            <span class="post-date" title="2021-09-16 15:37:39">2021/09/16</span>
+        </a>
+        
+        <a  class="All 数学建模 "
+           href="/2021/08/30/Matlab-%E8%AF%AD%E6%B3%95/"
+           data-tag="编程之美"
+           data-author="" >
+            <span class="post-title" title="Matlab 语法">Matlab 语法</span>
+            <span class="post-date" title="2021-08-30 18:59:06">2021/08/30</span>
+        </a>
+        
+        <a  class="All ACM "
+           href="/2021/06/05/ACM%E9%98%9F%E5%86%85%E6%AF%94%E8%B5%9B%E8%A1%A5%E9%A2%98%EF%BC%88%E5%9B%9B%EF%BC%89/"
+           data-tag="编程之美"
+           data-author="" >
+            <span class="post-title" title="ACM队内比赛补题（四）">ACM队内比赛补题（四）</span>
+            <span class="post-date" title="2021-06-05 16:04:30">2021/06/05</span>
+        </a>
+        
+        <a  class="All ACM "
+           href="/2021/05/29/ACM%E9%98%9F%E5%86%85%E6%AF%94%E8%B5%9B%E8%A1%A5%E9%A2%98%EF%BC%88%E4%B8%89%EF%BC%89/"
+           data-tag="编程之美"
+           data-author="" >
+            <span class="post-title" title="ACM队内比赛补题（三）">ACM队内比赛补题（三）</span>
+            <span class="post-date" title="2021-05-29 20:15:29">2021/05/29</span>
+        </a>
+        
+        <a  class="All ACM "
+           href="/2021/05/23/ACM%E9%98%9F%E5%86%85%E6%AF%94%E8%B5%9B%E8%A1%A5%E9%A2%98%EF%BC%88%E4%BA%8C%EF%BC%89/"
+           data-tag="编程之美"
+           data-author="" >
+            <span class="post-title" title="ACM队内比赛补题（二）">ACM队内比赛补题（二）</span>
+            <span class="post-date" title="2021-05-23 10:54:22">2021/05/23</span>
+        </a>
+        
+        <a  class="All ACM "
+           href="/2021/05/17/2021%E5%A4%A9%E6%A2%AF%E8%B5%9B%E8%A1%A5%E9%A2%98/"
+           data-tag="编程之美"
+           data-author="" >
+            <span class="post-title" title="2021天梯赛补题">2021天梯赛补题</span>
+            <span class="post-date" title="2021-05-17 17:26:53">2021/05/17</span>
+        </a>
+        
+        <a  class="All ACM "
+           href="/2021/05/16/ACM%E9%98%9F%E5%86%85%E6%AF%94%E8%B5%9B%E8%A1%A5%E9%A2%98%EF%BC%88%E4%B8%80%EF%BC%89/"
+           data-tag="编程之美"
+           data-author="" >
+            <span class="post-title" title="ACM队内比赛补题（一）">ACM队内比赛补题（一）</span>
+            <span class="post-date" title="2021-05-16 12:17:58">2021/05/16</span>
+        </a>
+        
+        <a  class="All web前端 "
+           href="/2021/02/17/CSS/"
+           data-tag="前端三大件"
+           data-author="" >
+            <span class="post-title" title="CSS">CSS</span>
+            <span class="post-date" title="2021-02-17 13:29:34">2021/02/17</span>
+        </a>
+        
+        <a  class="All web前端 "
+           href="/2021/01/20/HTML/"
+           data-tag="前端三大件"
+           data-author="" >
+            <span class="post-title" title="HTML">HTML</span>
+            <span class="post-date" title="2021-01-20 17:35:54">2021/01/20</span>
+        </a>
+        
+        <a  class="All 制作游戏 "
+           href="/2021/01/20/%E9%A9%AC%E9%87%8C%E5%A5%A5%E6%B8%B8%E6%88%8F%E5%88%B6%E4%BD%9C/"
+           data-tag="编程之美"
+           data-author="" >
+            <span class="post-title" title="马里奥游戏制作">马里奥游戏制作</span>
+            <span class="post-date" title="2021-01-20 17:35:54">2021/01/20</span>
+        </a>
+        
+        <div id="no-item-tips">
+
+        </div>
+    </nav>
+    <div id="outline-list">
+    </div>
+</div>
+    </div>
+    <div class="hide-list">
+        <div class="semicircle" data-title="切换全屏 快捷键 s">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div id="post">
+    <div class="pjax">
+        <article id="post-约瑟夫环-C-求解" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">约瑟夫环 C++求解</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="ACM">ACM</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color5">编程之美</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+            Created At : <time class="date" title='Updated At: 2021-09-21 12:05:56'>2021-09-16 15:37</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        
+        <span id="busuanzi_container_page_pv">
+            Views 👀 :<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BA%A6%E7%91%9F%E5%A4%AB%E7%8E%AF%E9%97%AE%E9%A2%98"><span class="toc-text">约瑟夫环问题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%97%AE%E9%A2%98%E8%B5%B7%E6%BA%90"><span class="toc-text">问题起源</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E4%B8%80-%E6%8E%92%E5%88%97%E5%87%BA%E7%8C%B4%E5%AD%90%E5%87%BA%E5%88%97%E7%9A%84%E9%A1%BA%E5%BA%8F"><span class="toc-text">题目一   排列出猴子出列的顺序</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E4%BA%8C-%E7%9B%B4%E6%8E%A5%E8%BE%93%E5%87%BA%E7%8C%B4%E7%8E%8B%E4%BD%8D%E7%BD%AE"><span class="toc-text">题目二   直接输出猴王位置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B3%95%E4%B8%80-%E6%9C%B4%E7%B4%A0%E7%9A%84%E6%95%B0%E7%BB%84%E6%96%B9%E6%B3%95"><span class="toc-text">法一   朴素的数组方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B3%95%E4%BA%8C-%E4%BD%BF%E7%94%A8list%E5%AE%9E%E7%8E%B0"><span class="toc-text">法二   使用list实现</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B3%95%E4%B8%89-%E7%94%A8%E9%80%92%E6%8E%A8%E5%85%AC%E5%BC%8F%E5%AE%9E%E7%8E%B0"><span class="toc-text">法三   用递推公式实现</span></a></li></ol></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="约瑟夫环问题"><a href="#约瑟夫环问题" class="headerlink" title="约瑟夫环问题"></a>约瑟夫环问题</h2><h2 id="问题起源"><a href="#问题起源" class="headerlink" title="问题起源"></a>问题起源</h2><p>据说著名犹太历史学家Josephus有过以下的故事：在罗马人占领乔塔帕特后，39 个犹太人与Josephus及他的朋友躲到一个洞中，39个犹太人决定宁愿死也不要被敌人抓到，于是决定了一个自杀方式，41个人排成一个圆圈，由第1个人开始报数，每报数到第3人该人就必须自杀，然后再由下一个重新报数，直到所有人都自杀身亡为止。然而Josephus 和他的朋友并不想遵从。首先从一个人开始，越过k-2个人（因为第一个人已经被越过），并杀掉第<em>k</em>个人。接着，再越过k-1个人，并杀掉第<em>k</em>个人。这个过程沿着圆圈一直进行，直到最终只剩下一个人留下，这个人就可以继续活着。问题是，给定了和，一开始要站在什么地方才能避免被处决。Josephus要他的朋友先假装遵从，他将朋友与自己安排在第16个与第31个位置，于是逃过了这场死亡游戏。</p>
+<p><img src="/image/%E7%BA%A6%E7%91%9F%E5%A4%AB%E7%8E%AF-C-%E6%B1%82%E8%A7%A3/Josephus-problem.jpeg"></p>
+<h2 id="题目一-排列出猴子出列的顺序"><a href="#题目一-排列出猴子出列的顺序" class="headerlink" title="题目一   排列出猴子出列的顺序"></a>题目一   排列出猴子出列的顺序</h2><pre><code class="c++">#include &lt;iostream&gt;
+#include &lt;list&gt;
+
+using namespace std;
+
+list &lt;int&gt; ls;
+
+int main()
+&#123;
+    int n, m, cnt = 0;
+
+    while (scanf(&quot;%d%d&quot;, &amp;n, &amp;m) != EOF &amp;&amp; (n || m))
+    &#123;
+        for (int i = 1; i &lt;= n; i ++ )
+        &#123;
+            ls.push_back(i);//为 ls 存入相应的序号
+        &#125;
+
+        list &lt;int&gt; :: iterator it, now;//初始化迭代器（指针）
+
+        it = ls.begin();//it 用于指向要处理的指针
+
+        while (!ls.empty())
+        &#123;
+            cnt ++ ;//记录报数
+            now = it;//在判断下一个指针可行性前，保存当前指针
+            if (++ it == ls.end()) it = ls.begin();//如果指向链表后面的位置，则回到头部
+
+            if (cnt == m)
+            &#123;
+                printf(&quot;%d &quot;, *now);//每次迭代，输出一次当前指针指向的数
+
+                cnt = 0;//报数重置
+                ls.erase(now);//将该位置的数出列
+            &#125;
+        &#125;
+    &#125;
+
+    return 0;
+&#125;</code></pre>
+<h2 id="题目二-直接输出猴王位置"><a href="#题目二-直接输出猴王位置" class="headerlink" title="题目二   直接输出猴王位置"></a>题目二   直接输出猴王位置</h2><h3 id="法一-朴素的数组方法"><a href="#法一-朴素的数组方法" class="headerlink" title="法一   朴素的数组方法"></a>法一   朴素的数组方法</h3><pre><code class="C++">#include &lt;iostream&gt;
+#include &lt;algorithm&gt;
+#include &lt;cstring&gt;
+
+using namespace std;
+const int N = 310;
+
+int st[N];
+
+int main()
+&#123;
+    int n, m, cnt, cur, now;
+
+    while (scanf(&quot;%d%d&quot;, &amp;n, &amp;m) != EOF &amp;&amp; (n || m))
+    &#123;
+        memset(st, 0, sizeof st);
+
+        now = 0;
+        cur = 0;
+        cnt = n;
+
+        while (cnt != 1)
+        &#123;
+            if (!st[cur])
+            &#123;
+                now ++ ;//用来记录报的数
+            &#125;
+            if (now == m)
+            &#123;
+                now = 0;//报数回到零
+                st[cur] = 1;//给当前位置记录状态
+                cnt -- ;//队伍中剩余人数减少
+            &#125;
+            cur ++ ;
+            if (cur == n) cur = 0;//到队尾时回到队头
+        &#125;
+
+        for (int i = 0; i &lt; n; i ++ )
+        &#123;
+            if (!st[i]) printf(&quot;%d\n&quot;, i + 1);//因为从零开始计数
+        &#125;
+    &#125;
+
+    return 0;
+&#125;</code></pre>
+<h3 id="法二-使用list实现"><a href="#法二-使用list实现" class="headerlink" title="法二   使用list实现"></a>法二   使用list实现</h3><pre><code class="c++">#include &lt;iostream&gt;
+#include &lt;list&gt;
+
+using namespace std;
+
+list &lt;int&gt; ls;
+
+int main()
+&#123;
+    int n, m, cnt = 0;
+
+    while (scanf(&quot;%d%d&quot;, &amp;n, &amp;m) != EOF &amp;&amp; (n || m))
+    &#123;
+        for (int i = 1; i &lt;= n; i ++ )
+        &#123;
+            ls.push_back(i);//为 ls 存入相应的序号
+        &#125;
+
+        list &lt;int&gt; :: iterator it, now;//初始化迭代器（指针）
+
+        it = ls.begin();//it 用于指向要处理的指针
+
+        while (!ls.empty())
+        &#123;
+            cnt ++ ;//记录报数
+            now = it;//在判断下一个指针可行性前，保存当前指针
+            if (++ it == ls.end()) it = ls.begin();//如果指向链表后面的位置，则回到头部
+
+            if (cnt == m)
+            &#123;
+                if (ls.size() == 1) printf(&quot;%d\n&quot;, *now);//如果就剩一个数，该数为猴王
+
+                cnt = 0;//报数重置
+                ls.erase(now);//将该位置的数出列
+            &#125;
+        &#125;
+    &#125;
+
+    return 0;
+&#125;</code></pre>
+<h3 id="法三-用递推公式实现"><a href="#法三-用递推公式实现" class="headerlink" title="法三   用递推公式实现"></a>法三   用递推公式实现</h3><pre><code class="c++">#include &lt;iostream&gt;
+
+using namespace std;
+
+int main()
+&#123;
+    int n, m;
+
+    while (scanf(&quot;%d%d&quot;, &amp;n, &amp;m) != EOF &amp;&amp; (m || n))
+    &#123;
+        int p = 0;
+
+        for (int i = 2; i &lt;= n; i ++ )
+        &#123;
+            p = (p + m) % i;
+        &#125;
+
+        printf(&quot;%d\n&quot;, p + 1);
+    &#125;
+
+    return 0;
+&#125;</code></pre>
+
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达，可以在下面评论区评论。 </span>
+    </div>
+</article>
+
+
+<p>
+    <a  class="dashang" onclick="dashangToggle()">💰</a>
+</p>
+
+
+
+
+
+
+    
+        <!-- MathJax配置，可通过单美元符号书写行内公式等 -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    "HTML-CSS": {
+        preferredFont: "TeX",
+        availableFonts: ["STIX","TeX"],
+        linebreaks: { automatic:true },
+        EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+        inlineMath: [ ["$", "$"], ["\\(","\\)"] ],
+        processEscapes: true,
+        ignoreClass: "tex2jax_ignore|dno",
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+        equationNumbers: { autoNumber: "AMS" },
+        noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } },
+        Macros: { href: "{}" }
+    },
+    messageStyle: "none"
+    });
+</script>
+<!-- 给MathJax元素添加has-jax class -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+<!-- 通过连接CDN加载MathJax的js代码 -->
+<script type="text/javascript" async
+        src="//cdn.jsdelivr.net/npm/mathjax@2.7.8/unpacked/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<input type="hidden" id="MathJax-js"
+        value="//cdn.jsdelivr.net/npm/mathjax@2.7.8/unpacked/MathJax.js?config=TeX-MML-AM_CHTML">
+</input>
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">
+    ©2016-2020 Yelog
+</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+
+<div class="hide_box" onclick="dashangToggle()"></div>
+<div class="shang_box">
+    <a class="shang_close"  onclick="dashangToggle()">×</a>
+    <div class="shang_tit">
+        <p>Help us with donation</p>
+    </div>
+    <div class="shang_payimg">
+        <div class="pay_img">
+            <img src="/img/alipay.jpg" class="alipay" title="扫码支持">
+            <img src="/img/weixin.jpg" class="weixin" title="扫码支持">
+        </div>
+    </div>
+    <div class="shang_payselect">
+        <span><label><input type="radio" name="pay" checked value="alipay">alipay</label></span><span><label><input type="radio" name="pay" value="weixin">weixin</label></span>
+    </div>
+</div>
+
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.1.0" ></script>
+
+<script src="/js/script.js?v=1.1.0" ></script>
+<script>
+    var img_resize = 'default';
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $("#post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+        $("input[name=pay]").on("click", function () {
+            if($("input[name=pay]:checked").val()=="weixin"){
+                $(".shang_box .shang_payimg .pay_img").addClass("weixin_img");
+            } else {
+                $(".shang_box .shang_payimg .pay_img").removeClass("weixin_img");
+            }
+        })
+        
+
+        /*高亮代码块行号*/
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+    function dashangToggle() {
+        $(".shang_box").fadeToggle();
+        $(".hide_box").fadeToggle();
+    }
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+
+    
+</style>
+
+
+
+
+
+
+
+</html>
