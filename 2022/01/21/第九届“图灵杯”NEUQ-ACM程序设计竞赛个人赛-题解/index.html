@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>第九届“图灵杯”NEUQ-ACM程序设计竞赛个人赛_题解 | Hexo</title>
+  <meta name="keywords" content=" 编程之美 ">
+  <meta name="description" content="第九届“图灵杯”NEUQ-ACM程序设计竞赛个人赛_题解 | Hexo">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="啦啦啦">
+<meta property="og:type" content="website">
+<meta property="og:title" content="分类">
+<meta property="og:url" content="http://example.com/categories/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="啦啦啦">
+<meta property="og:locale">
+<meta property="article:published_time" content="2021-01-05T13:39:28.000Z">
+<meta property="article:modified_time" content="2021-09-18T02:38:21.675Z">
+<meta property="article:author" content="pigion">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="icon" href="/img/avatar.jpg">
+
+<link href="/css/style.css?v=1.1.0" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-dark.css?v=1.1.0" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" rel="stylesheet">
+
+<script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="/js/titleTip.js?v=1.1.0" ></script>
+
+<script src="//cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.1.0" ></script>
+
+<meta name="generator" content="Hexo 5.3.0"></head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="">
+  <input class="theme_blog_path" value="">
+  <input id="theme_shortcut" value="true" />
+  <input id="theme_highlight_on" value="true" />
+  <input id="theme_code_copy" value="true" />
+</div>
+
+
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/"
+   class="avatar_target">
+    <img class="avatar"
+         src="/img/avatar.jpg"/>
+</a>
+<div class="author">
+    <span>pigion</span>
+</div>
+
+<div class="icon">
+    
+        
+            <a title="jianshu"
+               href="https://www.jianshu.com/u/b6a6ac7901a8"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-jianshu"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="email"
+               href="mailto:354812696@qq.com"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-email"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="qq"
+               href="http://wpa.qq.com/msgrd?v=3&uin=354812696&site=qq&menu=yes"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-qq"></use>
+                    </svg>
+                
+            </a>
+        
+    
+</div>
+
+
+
+
+<ul>
+    <li>
+        <div class="all active" data-rel="All">All
+            
+                <small>(24)</small>
+            
+        </div>
+    </li>
+    
+        
+            
+                <li>
+                    <div data-rel="web前端">
+                        
+                        web前端
+                        <small>(2)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="数学建模">
+                        
+                        数学建模
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="制作游戏">
+                        
+                        制作游戏
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="ACM">
+                        
+                        ACM
+                        <small>(14)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="screep">
+                        
+                        screep
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="spider">
+                        
+                        spider
+                        <small>(4)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+        
+            
+            
+            
+    </div>
+    <div>
+        
+            <a class="about  hasFriend  site_url"
+               
+               href="/about">About</a>
+        
+        <a style="width: 50%"
+                
+                                           class="friends">Friends</a>
+        
+    </div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="24">
+
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        Links
+        <i class="iconfont icon-left"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="http://a-c-dream.github.io/">远佬</a></li>
+            
+            <li><a target="_blank" href="http://4het.github.io/">源佬</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <div class="right-top">
+        <div id="default-panel">
+            <i class="iconfont icon-search" data-title="搜索 快捷键 i"></i>
+            <div class="right-title">All</div>
+            <i class="iconfont icon-file-tree" data-title="切换到大纲视图 快捷键 w"></i>
+        </div>
+        <div id="search-panel">
+            <i class="iconfont icon-left" data-title="返回"></i>
+            <input id="local-search-input" />
+            <label class="border-line" for="input"></label>
+            <i class="iconfont icon-case-sensitive" data-title="大小写敏感"></i>
+            <i class="iconfont icon-tag" data-title="标签"></i>
+        </div>
+        <div id="outline-panel" style="display: none">
+            <div class="right-title">大纲</div>
+            <i class="iconfont icon-list" data-title="切换到文章列表"></i>
+        </div>
+    </div>
+
+    <div class="tags-list">
+    <input id="tag-search" />
+    <div class="tag-wrapper">
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>编程之美</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>前端三大件</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>game</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>���֮��</a>
+            </li>
+        
+    </div>
+
+</div>
+
+    
+    <nav id="title-list-nav">
+        
+        <a  class="All screep "
+           href="/2022/08/14/screaper-tutorial/"
+           data-tag="game"
+           data-author="" >
+            <span class="post-title" title="screaper_tutorial">screaper_tutorial</span>
+            <span class="post-date" title="2022-08-14 16:10:22">2022/08/14</span>
+        </a>
+        
+        <a  class="All spider "
+           href="/2022/07/07/spider-4/"
+           data-tag="���֮��"
+           data-author="" >
+            <span class="post-title" title="spider_4">spider_4</span>
+            <span class="post-date" title="2022-07-07 15:02:36">2022/07/07</span>
+        </a>
+        
+        <a  class="All spider "
+           href="/2022/07/06/spide-3/"
+           data-tag="���֮��"
+           data-author="" >
+            <span class="post-title" title="spide-3">spide-3</span>
+            <span class="post-date" title="2022-07-06 14:02:45">2022/07/06</span>
+        </a>
+        
+        <a  class="All "
+           href="/2022/07/06/%E5%B1%80%E9%83%A8%E6%95%8F%E6%84%9F%E5%93%88%E5%B8%8C%E7%AE%97%E6%B3%95/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="局部敏感哈希算法">局部敏感哈希算法</span>
+            <span class="post-date" title="2022-07-06 10:08:18">2022/07/06</span>
+        </a>
+        
+        <a  class="All spider "
+           href="/2022/07/03/spide-2/"
+           data-tag="编程之美"
+           data-author="" >
+            <span class="post-title" title="spide_2">spide_2</span>
+            <span class="post-date" title="2022-07-03 15:45:54">2022/07/03</span>
+        </a>
+        
+        <a  class="All spider "
+           href="/2022/07/01/spide-1/"
+           data-tag="编程之美"
+           data-author="" >
+            <span class="post-title" title="spide_1">spide_1</span>
+            <span class="post-date" title="2022-07-01 17:53:17">2022/07/01</span>
+        </a>
+        
+        <a  class="All ACM "
+           href="/2022/04/25/%E5%A4%A9%E6%A2%AF%E8%B5%9B%E6%AD%A3%E5%BC%8F%E8%B5%9B%E2%80%94%E2%80%94%E8%A1%A5%E9%A2%98/"
+           data-tag="编程之美"
+           data-author="" >
+            <span class="post-title" title="天梯赛正式赛——补题">天梯赛正式赛——补题</span>
+            <span class="post-date" title="2022-04-25 14:11:56">2022/04/25</span>
+        </a>
+        
+        <a  class="All ACM "
+           href="/2022/02/25/Educational-Codeforces-Round-123-Rated-for-Div-2-Writeup/"
+           data-tag="编程之美"
+           data-author="" >
+            <span class="post-title" title="Educational Codeforces Round 123 (Rated for Div. 2) Writeup">Educational Codeforces Round 123 (Rated for Div. 2) Writeup</span>
+            <span class="post-date" title="2022-02-25 13:47:36">2022/02/25</span>
+        </a>
+        
+        <a  class="All ACM "
+           href="/2022/01/21/%E7%AC%AC%E4%B9%9D%E5%B1%8A%E2%80%9C%E5%9B%BE%E7%81%B5%E6%9D%AF%E2%80%9DNEUQ-ACM%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AB%9E%E8%B5%9B%E4%B8%AA%E4%BA%BA%E8%B5%9B-%E9%A2%98%E8%A7%A3/"
+           data-tag="编程之美"
+           data-author="" >
+            <span class="post-title" title="第九届“图灵杯”NEUQ-ACM程序设计竞赛个人赛_题解">第九届“图灵杯”NEUQ-ACM程序设计竞赛个人赛_题解</span>
+            <span class="post-date" title="2022-01-21 20:43:49">2022/01/21</span>
+        </a>
+        
+        <a  class="All ACM "
+           href="/2021/11/08/%E7%89%9B%E5%AE%A2%E5%B0%8F%E7%99%BD%E6%9C%88%E8%B5%9B40-%E9%A2%98%E8%A7%A3/"
+           data-tag="编程之美"
+           data-author="" >
+            <span class="post-title" title="牛客小白月赛40-题解">牛客小白月赛40-题解</span>
+            <span class="post-date" title="2021-11-08 20:15:55">2021/11/08</span>
+        </a>
+        
+        <a  class="All ACM "
+           href="/2021/10/19/2021-%E5%9B%9B%E5%B7%9D%E7%9C%81%E8%B5%9B-%E9%A2%98%E8%A7%A3/"
+           data-tag="编程之美"
+           data-author="" >
+            <span class="post-title" title="2021 四川省赛--题解">2021 四川省赛--题解</span>
+            <span class="post-date" title="2021-10-19 19:15:29">2021/10/19</span>
+        </a>
+        
+        <a  class="All ACM "
+           href="/2021/10/19/2021-CCPC-%E9%A2%98%E8%A7%A3/"
+           data-tag="编程之美"
+           data-author="" >
+            <span class="post-title" title="2021 CCPC--题解">2021 CCPC--题解</span>
+            <span class="post-date" title="2021-10-19 19:14:55">2021/10/19</span>
+        </a>
+        
+        <a  class="All ACM "
+           href="/2021/10/02/2021%20ICPC-%E7%BD%91%E7%BB%9C%E8%B5%9B%E7%AC%AC%E4%BA%8C%E5%9C%BA-%E9%A2%98%E8%A7%A3/"
+           data-tag="编程之美"
+           data-author="" >
+            <span class="post-title" title="ICPC-网络赛第二场-题解">ICPC-网络赛第二场-题解</span>
+            <span class="post-date" title="2021-10-02 08:07:48">2021/10/02</span>
+        </a>
+        
+        <a  class="All ACM "
+           href="/2021/09/22/2021%20ICPC-%E7%BD%91%E7%BB%9C%E8%B5%9B%E7%AC%AC%E4%B8%80%E5%9C%BA-%E9%A2%98%E8%A7%A3/"
+           data-tag="编程之美"
+           data-author="" >
+            <span class="post-title" title="ICPC_网络赛第一场_补题">ICPC_网络赛第一场_补题</span>
+            <span class="post-date" title="2021-09-22 22:57:39">2021/09/22</span>
+        </a>
+        
+        <a  class="All ACM "
+           href="/2021/09/16/%E7%BA%A6%E7%91%9F%E5%A4%AB%E7%8E%AF-C-%E6%B1%82%E8%A7%A3/"
+           data-tag="编程之美"
+           data-author="" >
+            <span class="post-title" title="约瑟夫环 C++求解">约瑟夫环 C++求解</span>
+            <span class="post-date" title="2021-09-16 15:37:39">2021/09/16</span>
+        </a>
+        
+        <a  class="All 数学建模 "
+           href="/2021/08/30/Matlab-%E8%AF%AD%E6%B3%95/"
+           data-tag="编程之美"
+           data-author="" >
+            <span class="post-title" title="Matlab 语法">Matlab 语法</span>
+            <span class="post-date" title="2021-08-30 18:59:06">2021/08/30</span>
+        </a>
+        
+        <a  class="All ACM "
+           href="/2021/06/05/ACM%E9%98%9F%E5%86%85%E6%AF%94%E8%B5%9B%E8%A1%A5%E9%A2%98%EF%BC%88%E5%9B%9B%EF%BC%89/"
+           data-tag="编程之美"
+           data-author="" >
+            <span class="post-title" title="ACM队内比赛补题（四）">ACM队内比赛补题（四）</span>
+            <span class="post-date" title="2021-06-05 16:04:30">2021/06/05</span>
+        </a>
+        
+        <a  class="All ACM "
+           href="/2021/05/29/ACM%E9%98%9F%E5%86%85%E6%AF%94%E8%B5%9B%E8%A1%A5%E9%A2%98%EF%BC%88%E4%B8%89%EF%BC%89/"
+           data-tag="编程之美"
+           data-author="" >
+            <span class="post-title" title="ACM队内比赛补题（三）">ACM队内比赛补题（三）</span>
+            <span class="post-date" title="2021-05-29 20:15:29">2021/05/29</span>
+        </a>
+        
+        <a  class="All ACM "
+           href="/2021/05/23/ACM%E9%98%9F%E5%86%85%E6%AF%94%E8%B5%9B%E8%A1%A5%E9%A2%98%EF%BC%88%E4%BA%8C%EF%BC%89/"
+           data-tag="编程之美"
+           data-author="" >
+            <span class="post-title" title="ACM队内比赛补题（二）">ACM队内比赛补题（二）</span>
+            <span class="post-date" title="2021-05-23 10:54:22">2021/05/23</span>
+        </a>
+        
+        <a  class="All ACM "
+           href="/2021/05/17/2021%E5%A4%A9%E6%A2%AF%E8%B5%9B%E8%A1%A5%E9%A2%98/"
+           data-tag="编程之美"
+           data-author="" >
+            <span class="post-title" title="2021天梯赛补题">2021天梯赛补题</span>
+            <span class="post-date" title="2021-05-17 17:26:53">2021/05/17</span>
+        </a>
+        
+        <a  class="All ACM "
+           href="/2021/05/16/ACM%E9%98%9F%E5%86%85%E6%AF%94%E8%B5%9B%E8%A1%A5%E9%A2%98%EF%BC%88%E4%B8%80%EF%BC%89/"
+           data-tag="编程之美"
+           data-author="" >
+            <span class="post-title" title="ACM队内比赛补题（一）">ACM队内比赛补题（一）</span>
+            <span class="post-date" title="2021-05-16 12:17:58">2021/05/16</span>
+        </a>
+        
+        <a  class="All web前端 "
+           href="/2021/02/17/CSS/"
+           data-tag="前端三大件"
+           data-author="" >
+            <span class="post-title" title="CSS">CSS</span>
+            <span class="post-date" title="2021-02-17 13:29:34">2021/02/17</span>
+        </a>
+        
+        <a  class="All web前端 "
+           href="/2021/01/20/HTML/"
+           data-tag="前端三大件"
+           data-author="" >
+            <span class="post-title" title="HTML">HTML</span>
+            <span class="post-date" title="2021-01-20 17:35:54">2021/01/20</span>
+        </a>
+        
+        <a  class="All 制作游戏 "
+           href="/2021/01/20/%E9%A9%AC%E9%87%8C%E5%A5%A5%E6%B8%B8%E6%88%8F%E5%88%B6%E4%BD%9C/"
+           data-tag="编程之美"
+           data-author="" >
+            <span class="post-title" title="马里奥游戏制作">马里奥游戏制作</span>
+            <span class="post-date" title="2021-01-20 17:35:54">2021/01/20</span>
+        </a>
+        
+        <div id="no-item-tips">
+
+        </div>
+    </nav>
+    <div id="outline-list">
+    </div>
+</div>
+    </div>
+    <div class="hide-list">
+        <div class="semicircle" data-title="切换全屏 快捷键 s">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div id="post">
+    <div class="pjax">
+        <article id="post-第九届“图灵杯”NEUQ-ACM程序设计竞赛个人赛-题解" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">第九届“图灵杯”NEUQ-ACM程序设计竞赛个人赛_题解</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="ACM">ACM</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color5">编程之美</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+            Created At : <time class="date" title='Updated At: 2022-01-22 22:28:06'>2022-01-21 20:43</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        
+        <span id="busuanzi_container_page_pv">
+            Views 👀 :<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#nn%E4%B8%8E%E6%B8%B8%E6%88%8F"><span class="toc-text">nn与游戏</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0"><span class="toc-text">题目描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BE%93%E5%85%A5"><span class="toc-text">输入</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BE%93%E5%87%BA"><span class="toc-text">输出</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A0%B7%E4%BE%8B"><span class="toc-text">样例</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Example-1"><span class="toc-text">Example 1</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B3%A8%E6%84%8F"><span class="toc-text">注意</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF"><span class="toc-text">解题思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#AC%E4%BB%A3%E7%A0%81"><span class="toc-text">AC代码</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%89%B9%E5%BE%81%E5%80%BC"><span class="toc-text">特征值</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0-1"><span class="toc-text">题目描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BE%93%E5%85%A5-1"><span class="toc-text">输入</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BE%93%E5%87%BA-1"><span class="toc-text">输出</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A0%B7%E4%BE%8B-1"><span class="toc-text">样例</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Example-1-1"><span class="toc-text">Example 1</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Example-2"><span class="toc-text">Example 2</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Example-3"><span class="toc-text">Example 3</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B3%A8%E6%84%8F-1"><span class="toc-text">注意</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF-1"><span class="toc-text">解题思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#AC%E4%BB%A3%E7%A0%81-1"><span class="toc-text">AC代码</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B7%B1%E6%B8%8A%E6%B0%B4%E5%A6%96"><span class="toc-text">深渊水妖</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0-2"><span class="toc-text">题目描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BE%93%E5%85%A5-2"><span class="toc-text">输入</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BE%93%E5%87%BA-2"><span class="toc-text">输出</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A0%B7%E4%BE%8B-2"><span class="toc-text">样例</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Example-1-2"><span class="toc-text">Example 1</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B3%A8%E6%84%8F-2"><span class="toc-text">注意</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF-2"><span class="toc-text">解题思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#AC%E4%BB%A3%E7%A0%81-2"><span class="toc-text">AC代码</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%89%B9%E5%BE%81%E5%80%BC-1"><span class="toc-text">特征值</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0-3"><span class="toc-text">题目描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0-4"><span class="toc-text">题目描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BE%93%E5%85%A5-3"><span class="toc-text">输入</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BE%93%E5%87%BA-3"><span class="toc-text">输出</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A0%B7%E4%BE%8B-3"><span class="toc-text">样例</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Example-1-3"><span class="toc-text">Example 1</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B3%A8%E6%84%8F-3"><span class="toc-text">注意</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF-3"><span class="toc-text">解题思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#AC%E4%BB%A3%E7%A0%81-3"><span class="toc-text">AC代码</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%89%B9%E5%BE%81%E5%80%BC-2"><span class="toc-text">特征值</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0-5"><span class="toc-text">题目描述</span></a></li></ol></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="nn与游戏"><a href="#nn与游戏" class="headerlink" title="nn与游戏"></a>nn与游戏</h2><h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p>nn最近突然对做游戏非常感兴趣，于是他去找做游戏的xf询问相关话题，而xf此时正好在做一个游戏demo。<br> 目前游戏中有一个n×n大小的地图，里面有若干个可控制的己方单位、与己方单位同数量的敌对单位和一些障碍物。为了充分达成对各个单位的克制，玩家需要手动控制各个不同单位移动到自己所克制的敌对单位附近攻击。<br> 现在xf将这样一个功能的实现强行塞给了nn：需要让玩家立刻了解到自己可控制的所有单位是否能绕过各个障碍移动到各自所克制的地方单位附近。<br> 你能帮nn解决这个问题吗？</p>
+<h3 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h3><p>第1行输入n，m，代表该地图大小为n×n，存在m个障碍。<br>第2∼m+1行每行依次输入x,y代表每个障碍的坐标位置。<br>第m+2行输入t，代表总共有t个可控制单位和t个敌对单位。<br>第m+3行往后每行依次输入x1,y1,x2,y2(x1,y1)代表一个己方可控制单位的位置，(x2,y2)代表被其克制的敌对单位的位置（即该可控制己方单位的目标点）。<br>数据保证任何单位与障碍都不会出现重叠，地图的x，y坐标都位于[0,n)范围内。<br>1≤n≤10<sup>3</sup>，0≤m&lt;10<sup>6</sup><br>1≤t≤10，0≤x,y,x1,y1,x2,y2&lt;n</p>
+<h3 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h3><p>按可控制单位坐标的输入顺序输出各个可控制单位是否能抵达对应敌对单位所在位置，若能抵达，输出抵达对应位置所需的最短步数，否则输出-1。<br>注：寻路过程中<strong>需要</strong>考虑单位间的阻挡（即一个单位不管是可控制单位还是敌对单位，都会成为其他单位的障碍物），但因为只是计算一个时间点的事情，所以在计算时默认其他单位都在原来位置静止不动就行。</p>
+<h3 id="样例"><a href="#样例" class="headerlink" title="样例"></a>样例</h3><h4 id="Example-1"><a href="#Example-1" class="headerlink" title="Example 1"></a>Example 1</h4><p><strong>Input</strong></p>
+<pre><code class="C++">3 1
+1 0
+2
+0 0 1 1
+0 1 2 2</code></pre>
+<p><strong>Output</strong></p>
+<pre><code class="C++">-1
+3</code></pre>
+<h3 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h3><p>地图如下（a，b为可控制单位，对应克制的敌对单位为c，d，障碍物为1，空位置为0）</p>
+<pre><code class="cpp">00d
+bc0
+a10</code></pre>
+<p>如图可见，a去c的路程被b和1挡住了，故输出-1；b可以通过向上，向右，向右，三步到达d，此路径为b到达d的最短路径，故输出3</p>
+<h3 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h3><ol>
+<li><p>bfs经典问题</p>
+</li>
+<li><p>求每个点的最短路径</p>
+</li>
+<li><p>注意，有布置现场和恢复现场的过程</p>
+</li>
+</ol>
+<h3 id="AC代码"><a href="#AC代码" class="headerlink" title="AC代码"></a>AC代码</h3><pre><code class="c++">#include &lt;iostream&gt;
+#include &lt;queue&gt;
+#include &lt;cstring&gt;
+
+using namespace std;
+
+const int N = 1010;
+
+typedef pair&lt;int, int&gt; PII;
+
+PII a[N], b[N];
+
+int g[N][N], d[N][N];
+
+bool st[N][N];
+
+int n, m;
+
+int dx[4] = &#123;1, 0, -1, 0&#125;;
+int dy[4] = &#123;0, 1, 0, -1&#125;;
+
+int bfs(int x1, int y1, int x2, int y2)
+&#123;
+    queue&lt;PII&gt; q;//这个一定要写在里面！！！
+
+    q.push(&#123;x1, y1&#125;);
+
+    memset(d, -1, sizeof d);
+    memset(st, false, sizeof st);
+
+    d[x1][y1] = 0;
+
+    while (q.size())
+    &#123;
+        auto t = q.front();
+        q.pop();
+
+        int x = t.first, y = t.second;
+
+        if (x == x2 &amp;&amp; y == y2) break;
+
+        for (int i = 0; i &lt; 4; i ++ )
+        &#123;
+            int xx = x + dx[i], yy = y + dy[i];
+
+            if (xx &gt;= 0 &amp;&amp; xx &lt; n &amp;&amp; yy &gt;= 0 &amp;&amp; yy &lt; n &amp;&amp; !g[xx][yy] &amp;&amp; d[xx][yy] == -1)
+            &#123;
+                d[xx][yy] = d[x][y] + 1;
+                q.push(&#123;xx, yy&#125;);
+            &#125;
+        &#125;
+    &#125;
+    return d[x2][y2];
+&#125;
+
+
+
+int main()
+&#123;
+    scanf(&quot;%d%d&quot;, &amp;n, &amp;m);
+
+    while (m -- )
+    &#123;
+        int x, y;
+        scanf(&quot;%d%d&quot;, &amp;x, &amp;y);
+
+        g[x][y] = 1; 
+    &#125;
+
+    int t;
+    cin &gt;&gt; t;
+
+    for (int i = 0; i &lt; t; i ++ )
+    &#123;
+        int x, y, xx, yy;
+        scanf(&quot;%d%d%d%d&quot;, &amp;x, &amp;y, &amp;xx, &amp;yy);
+        a[i] = &#123;x, y&#125;;
+        b[i] = &#123;xx, yy&#125;;
+        g[x][y] = 1;
+        g[xx][yy] = 1;
+    &#125;
+
+    for (int i = 0; i &lt; t; i ++ )
+    &#123;
+        int x = a[i].first, y = a[i].second;
+        int xx = b[i].first, yy = b[i].second;
+
+        g[x][y] = 0, g[xx][yy] = 0;
+
+        cout &lt;&lt; bfs(x, y, xx, yy) &lt;&lt; endl;
+
+        g[x][y] = 1, g[xx][yy] = 1;
+    &#125;
+
+    return 0;
+&#125;</code></pre>
+<h2 id="特征值"><a href="#特征值" class="headerlink" title="特征值"></a>特征值</h2><h3 id="题目描述-1"><a href="#题目描述-1" class="headerlink" title="题目描述"></a>题目描述</h3><p>最近捷宝学习了线性代数的知识，并成功在期末考试中获得了<strong>100</strong>分的好成绩。 </p>
+<p>  其中<strong>计算矩阵的特征值</strong>这一题型给他留下深刻印象。 </p>
+<p>  出于好奇心，他决定利用假期时间仔细钻研<strong>特征值</strong>这一概念。经过长达好多好多好多好多天的闭关研究，捷宝提出了<strong>整数的特征值</strong>这一概念。 </p>
+<p>  可爱的捷宝定义，对于任意的正整数X，它的特征值的计算方式为： 特征值=</p>
+<p><img src="/image/%E7%AC%AC%E4%B9%9D%E5%B1%8A%E2%80%9C%E5%9B%BE%E7%81%B5%E6%9D%AF%E2%80%9DNEUQ-ACM%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AB%9E%E8%B5%9B%E4%B8%AA%E4%BA%BA%E8%B5%9B-%E9%A2%98%E8%A7%A3/%E5%85%AC%E5%BC%8F.png"></p>
+<p>注：⌊ ⌋为向下取整，即不超过当前数字的最大整数（⌊3.2⌋=3,⌊2.9⌋=2,⌊7⌋=7） </p>
+<p>  现在捷宝想要把概念进行推广，他需要你帮忙设计一个程序，能够对于任意读入的一个正整数，快速计算它的特征值.</p>
+<h3 id="输入-1"><a href="#输入-1" class="headerlink" title="输入"></a>输入</h3><p>输入共包括1行，输入捷宝想要研究的数字X其中1 ≤ X &lt; 10<sup>500000</sup></p>
+<h3 id="输出-1"><a href="#输出-1" class="headerlink" title="输出"></a>输出</h3><p>输出共包括一行，输出所研究数字的特征值</p>
+<h3 id="样例-1"><a href="#样例-1" class="headerlink" title="样例"></a>样例</h3><h4 id="Example-1-1"><a href="#Example-1-1" class="headerlink" title="Example 1"></a>Example 1</h4><p><strong>Input</strong></p>
+<pre><code class="C++">1225</code></pre>
+<p><strong>Output</strong></p>
+<pre><code class="C++">1360</code></pre>
+<p><strong>Note</strong></p>
+<pre><code class="C++">1225+122+12+1=1360</code></pre>
+<h4 id="Example-2"><a href="#Example-2" class="headerlink" title="Example 2"></a>Example 2</h4><p><strong>Input</strong></p>
+<pre><code class="C++">99999</code></pre>
+<p><strong>Output</strong></p>
+<pre><code class="C++">111105</code></pre>
+<p><strong>Note</strong></p>
+<pre><code class="C++">1360</code></pre>
+<h4 id="Example-3"><a href="#Example-3" class="headerlink" title="Example 3"></a>Example 3</h4><p><strong>Input</strong></p>
+<pre><code class="C++">314159265358979323846264338327950288419716939937510</code></pre>
+<p><strong>Output</strong></p>
+<pre><code class="C++">349065850398865915384738153697722542688574377708317</code></pre>
+<h3 id="注意-1"><a href="#注意-1" class="headerlink" title="注意"></a>注意</h3><p>由于本题中读入数据的数据范围较大，所以可以考虑使用int类型的数组来存储X的每一位，以便于后续操作。<br>计算答案和输出答案也同理，可以使用数组来存储数字的每一位。</p>
+<h3 id="解题思路-1"><a href="#解题思路-1" class="headerlink" title="解题思路"></a>解题思路</h3><ol>
+<li><p>看似大数求和，实则前缀和</p>
+</li>
+<li><p>大数果然超时了</p>
+</li>
+<li><p>注意前缀和求完，会有进位</p>
+</li>
+</ol>
+<h3 id="AC代码-1"><a href="#AC代码-1" class="headerlink" title="AC代码"></a>AC代码</h3><pre><code class="c++">#include &lt;iostream&gt;
+#include &lt;cstring&gt;
+
+using namespace std;
+
+const int N = 5e5 + 10;
+
+int a[N], b[N], c[N];
+
+int main()
+&#123;
+    char s[N];
+    cin &gt;&gt; s + 1;
+
+    int n = strlen(s + 1);
+
+    for (int i = 1; i &lt;= n; i ++ )
+        b[i] = b[i - 1] + s[i] - &#39;0&#39;; //求前缀和    
+
+    int jinwei = 0;
+    for (int i = n; i &gt;= 1; i -- )
+    &#123;
+        c[i] = (b[i] + jinwei) % 10;
+        jinwei = (b[i] + jinwei) / 10;
+    &#125;
+
+    if (jinwei) cout &lt;&lt; jinwei; //有进位先输出 
+    for (int i = 1; i &lt;= n; i ++ )
+        cout &lt;&lt; c[i];
+
+    return 0;
+&#125;</code></pre>
+<h2 id="深渊水妖"><a href="#深渊水妖" class="headerlink" title="深渊水妖"></a>深渊水妖</h2><h3 id="题目描述-2"><a href="#题目描述-2" class="headerlink" title="题目描述"></a>题目描述</h3><p>你进行了 n 次考试，第 iii 次考试的分数是 a<sub>i</sub>。 </p>
+<p> 你想知道你最大进步的幅度是多少，定义最大进步的幅度为：</p>
+<ol>
+<li>选定一段 <strong>极长</strong> 的区间 [l, r]，满足 a<sub>l≤al+1≤⋯≤ara_l\le a_{l+1}\le\cdots\le a_ral≤al+1≤⋯≤ar。 </li>
+</ol>
+<p>  \2. 满足条件一的情况下，使得 ar−ala_r-a_lar−al 的值最大。 </p>
+<p>  如果你有多段最大进步，你需要输出所有的最大进步段，每一段用两个数 l,rl,rl,r 表示，按照区间的左端点升序输出。 </p>
+<p>  <strong>一句话题意：找到所有极长的不严格上升段，并找出它们当中右端点权值 - 左端点权值最大的那些个段，输出端点坐标。</strong></p>
+<h3 id="输入-2"><a href="#输入-2" class="headerlink" title="输入"></a>输入</h3><p>第1行输入n，m，代表该地图大小为n×n，存在m个障碍。<br>第2∼m+1行每行依次输入x,y代表每个障碍的坐标位置。<br>第m+2行输入t，代表总共有t个可控制单位和t个敌对单位。<br>第m+3行往后每行依次输入x1,y1,x2,y2(x1,y1)代表一个己方可控制单位的位置，(x2,y2)代表被其克制的敌对单位的位置（即该可控制己方单位的目标点）。<br>数据保证任何单位与障碍都不会出现重叠，地图的x，y坐标都位于[0,n)范围内。<br>1≤n≤10<sup>3</sup>，0≤m&lt;10<sup>6</sup><br>1≤t≤10，0≤x,y,x1,y1,x2,y2&lt;n</p>
+<h3 id="输出-2"><a href="#输出-2" class="headerlink" title="输出"></a>输出</h3><p>按可控制单位坐标的输入顺序输出各个可控制单位是否能抵达对应敌对单位所在位置，若能抵达，输出抵达对应位置所需的最短步数，否则输出-1。<br>注：寻路过程中<strong>需要</strong>考虑单位间的阻挡（即一个单位不管是可控制单位还是敌对单位，都会成为其他单位的障碍物），但因为只是计算一个时间点的事情，所以在计算时默认其他单位都在原来位置静止不动就行。</p>
+<h3 id="样例-2"><a href="#样例-2" class="headerlink" title="样例"></a>样例</h3><h4 id="Example-1-2"><a href="#Example-1-2" class="headerlink" title="Example 1"></a>Example 1</h4><p><strong>Input</strong></p>
+<pre><code class="C++">3 1
+1 0
+2
+0 0 1 1
+0 1 2 2</code></pre>
+<p><strong>Output</strong></p>
+<pre><code class="C++">-1
+3</code></pre>
+<h3 id="注意-2"><a href="#注意-2" class="headerlink" title="注意"></a>注意</h3><p>地图如下（a，b为可控制单位，对应克制的敌对单位为c，d，障碍物为1，空位置为0）</p>
+<pre><code class="cpp">00d
+bc0
+a10</code></pre>
+<p>如图可见，a去c的路程被b和1挡住了，故输出-1；b可以通过向上，向右，向右，三步到达d，此路径为b到达d的最短路径，故输出3</p>
+<h3 id="解题思路-2"><a href="#解题思路-2" class="headerlink" title="解题思路"></a>解题思路</h3><ol>
+<li><p>bfs经典问题</p>
+</li>
+<li><p>求每个点的最短路径</p>
+</li>
+<li><p>注意，有布置现场和恢复现场的过程</p>
+</li>
+</ol>
+<h3 id="AC代码-2"><a href="#AC代码-2" class="headerlink" title="AC代码"></a>AC代码</h3><pre><code class="c++">#include &lt;iostream&gt;
+#include &lt;queue&gt;
+#include &lt;cstring&gt;
+
+using namespace std;
+
+const int N = 1010;
+
+typedef pair&lt;int, int&gt; PII;
+
+PII a[N], b[N];
+
+int g[N][N], d[N][N];
+
+bool st[N][N];
+
+int n, m;
+
+int dx[4] = &#123;1, 0, -1, 0&#125;;
+int dy[4] = &#123;0, 1, 0, -1&#125;;
+
+int bfs(int x1, int y1, int x2, int y2)
+&#123;
+    queue&lt;PII&gt; q;//这个一定要写在里面！！！
+
+    q.push(&#123;x1, y1&#125;);
+
+    memset(d, -1, sizeof d);
+    memset(st, false, sizeof st);
+
+    d[x1][y1] = 0;
+
+    while (q.size())
+    &#123;
+        auto t = q.front();
+        q.pop();
+
+        int x = t.first, y = t.second;
+
+        if (x == x2 &amp;&amp; y == y2) break;
+
+        for (int i = 0; i &lt; 4; i ++ )
+        &#123;
+            int xx = x + dx[i], yy = y + dy[i];
+
+            if (xx &gt;= 0 &amp;&amp; xx &lt; n &amp;&amp; yy &gt;= 0 &amp;&amp; yy &lt; n &amp;&amp; !g[xx][yy] &amp;&amp; d[xx][yy] == -1)
+            &#123;
+                d[xx][yy] = d[x][y] + 1;
+                q.push(&#123;xx, yy&#125;);
+            &#125;
+        &#125;
+    &#125;
+    return d[x2][y2];
+&#125;
+
+
+
+int main()
+&#123;
+    scanf(&quot;%d%d&quot;, &amp;n, &amp;m);
+
+    while (m -- )
+    &#123;
+        int x, y;
+        scanf(&quot;%d%d&quot;, &amp;x, &amp;y);
+
+        g[x][y] = 1; 
+    &#125;
+
+    int t;
+    cin &gt;&gt; t;
+
+    for (int i = 0; i &lt; t; i ++ )
+    &#123;
+        int x, y, xx, yy;
+        scanf(&quot;%d%d%d%d&quot;, &amp;x, &amp;y, &amp;xx, &amp;yy);
+        a[i] = &#123;x, y&#125;;
+        b[i] = &#123;xx, yy&#125;;
+        g[x][y] = 1;
+        g[xx][yy] = 1;
+    &#125;
+
+    for (int i = 0; i &lt; t; i ++ )
+    &#123;
+        int x = a[i].first, y = a[i].second;
+        int xx = b[i].first, yy = b[i].second;
+
+        g[x][y] = 0, g[xx][yy] = 0;
+
+        cout &lt;&lt; bfs(x, y, xx, yy) &lt;&lt; endl;
+
+        g[x][y] = 1, g[xx][yy] = 1;
+    &#125;
+
+    return 0;
+&#125;</code></pre>
+<h2 id="特征值-1"><a href="#特征值-1" class="headerlink" title="特征值"></a>特征值</h2><h3 id="题目描述-3"><a href="#题目描述-3" class="headerlink" title="题目描述"></a>题目描述</h3><p>最近捷宝学习了线性代数的知识，并成功在期末考试中获得了<strong>100</strong>分的好成绩。 </p>
+<p>  其中<strong>计算矩阵的特征值</strong>这一题型给他留下深刻印象。 </p>
+<p>  出于好奇心，他决定利用假期时间仔细钻研<strong>特征值</strong>这一概念。经过长达好多好多好多好多天的闭关研究，捷宝提出了<strong>整数的特征值</strong>这一概念。 </p>
+<p>  可爱的捷宝定义，对于任意nn与游戏</p>
+<h3 id="题目描述-4"><a href="#题目描述-4" class="headerlink" title="题目描述"></a>题目描述</h3><p>nn最近突然对做游戏非常感兴趣，于是他去找做游戏的xf询问相关话题，而xf此时正好在做一个游戏demo。<br> 目前游戏中有一个n×n大小的地图，里面有若干个可控制的己方单位、与己方单位同数量的敌对单位和一些障碍物。为了充分达成对各个单位的克制，玩家需要手动控制各个不同单位移动到自己所克制的敌对单位附近攻击。<br> 现在xf将这样一个功能的实现强行塞给了nn：需要让玩家立刻了解到自己可控制的所有单位是否能绕过各个障碍移动到各自所克制的地方单位附近。<br> 你能帮nn解决这个问题吗？</p>
+<h3 id="输入-3"><a href="#输入-3" class="headerlink" title="输入"></a>输入</h3><p>第1行输入n，m，代表该地图大小为n×n，存在m个障碍。<br>第2∼m+1行每行依次输入x,y代表每个障碍的坐标位置。<br>第m+2行输入t，代表总共有t个可控制单位和t个敌对单位。<br>第m+3行往后每行依次输入x1,y1,x2,y2(x1,y1)代表一个己方可控制单位的位置，(x2,y2)代表被其克制的敌对单位的位置（即该可控制己方单位的目标点）。<br>数据保证任何单位与障碍都不会出现重叠，地图的x，y坐标都位于[0,n)范围内。<br>1≤n≤10<sup>3</sup>，0≤m&lt;10<sup>6</sup><br>1≤t≤10，0≤x,y,x1,y1,x2,y2&lt;n</p>
+<h3 id="输出-3"><a href="#输出-3" class="headerlink" title="输出"></a>输出</h3><p>按可控制单位坐标的输入顺序输出各个可控制单位是否能抵达对应敌对单位所在位置，若能抵达，输出抵达对应位置所需的最短步数，否则输出-1。<br>注：寻路过程中<strong>需要</strong>考虑单位间的阻挡（即一个单位不管是可控制单位还是敌对单位，都会成为其他单位的障碍物），但因为只是计算一个时间点的事情，所以在计算时默认其他单位都在原来位置静止不动就行。</p>
+<h3 id="样例-3"><a href="#样例-3" class="headerlink" title="样例"></a>样例</h3><h4 id="Example-1-3"><a href="#Example-1-3" class="headerlink" title="Example 1"></a>Example 1</h4><p><strong>Input</strong></p>
+<pre><code class="C++">3 1
+1 0
+2
+0 0 1 1
+0 1 2 2</code></pre>
+<p><strong>Output</strong></p>
+<pre><code class="C++">-1
+3</code></pre>
+<h3 id="注意-3"><a href="#注意-3" class="headerlink" title="注意"></a>注意</h3><p>地图如下（a，b为可控制单位，对应克制的敌对单位为c，d，障碍物为1，空位置为0）</p>
+<pre><code class="cpp">00d
+bc0
+a10</code></pre>
+<p>如图可见，a去c的路程被b和1挡住了，故输出-1；b可以通过向上，向右，向右，三步到达d，此路径为b到达d的最短路径，故输出3</p>
+<h3 id="解题思路-3"><a href="#解题思路-3" class="headerlink" title="解题思路"></a>解题思路</h3><ol>
+<li><p>bfs经典问题</p>
+</li>
+<li><p>求每个点的最短路径</p>
+</li>
+<li><p>注意，有布置现场和恢复现场的过程</p>
+</li>
+</ol>
+<h3 id="AC代码-3"><a href="#AC代码-3" class="headerlink" title="AC代码"></a>AC代码</h3><pre><code class="c++">#include &lt;iostream&gt;
+#include &lt;queue&gt;
+#include &lt;cstring&gt;
+
+using namespace std;
+
+const int N = 1010;
+
+typedef pair&lt;int, int&gt; PII;
+
+PII a[N], b[N];
+
+int g[N][N], d[N][N];
+
+bool st[N][N];
+
+int n, m;
+
+int dx[4] = &#123;1, 0, -1, 0&#125;;
+int dy[4] = &#123;0, 1, 0, -1&#125;;
+
+int bfs(int x1, int y1, int x2, int y2)
+&#123;
+    queue&lt;PII&gt; q;//这个一定要写在里面！！！
+
+    q.push(&#123;x1, y1&#125;);
+
+    memset(d, -1, sizeof d);
+    memset(st, false, sizeof st);
+
+    d[x1][y1] = 0;
+
+    while (q.size())
+    &#123;
+        auto t = q.front();
+        q.pop();
+
+        int x = t.first, y = t.second;
+
+        if (x == x2 &amp;&amp; y == y2) break;
+
+        for (int i = 0; i &lt; 4; i ++ )
+        &#123;
+            int xx = x + dx[i], yy = y + dy[i];
+
+            if (xx &gt;= 0 &amp;&amp; xx &lt; n &amp;&amp; yy &gt;= 0 &amp;&amp; yy &lt; n &amp;&amp; !g[xx][yy] &amp;&amp; d[xx][yy] == -1)
+            &#123;
+                d[xx][yy] = d[x][y] + 1;
+                q.push(&#123;xx, yy&#125;);
+            &#125;
+        &#125;
+    &#125;
+    return d[x2][y2];
+&#125;
+
+
+
+int main()
+&#123;
+    scanf(&quot;%d%d&quot;, &amp;n, &amp;m);
+
+    while (m -- )
+    &#123;
+        int x, y;
+        scanf(&quot;%d%d&quot;, &amp;x, &amp;y);
+
+        g[x][y] = 1; 
+    &#125;
+
+    int t;
+    cin &gt;&gt; t;
+
+    for (int i = 0; i &lt; t; i ++ )
+    &#123;
+        int x, y, xx, yy;
+        scanf(&quot;%d%d%d%d&quot;, &amp;x, &amp;y, &amp;xx, &amp;yy);
+        a[i] = &#123;x, y&#125;;
+        b[i] = &#123;xx, yy&#125;;
+        g[x][y] = 1;
+        g[xx][yy] = 1;
+    &#125;
+
+    for (int i = 0; i &lt; t; i ++ )
+    &#123;
+        int x = a[i].first, y = a[i].second;
+        int xx = b[i].first, yy = b[i].second;
+
+        g[x][y] = 0, g[xx][yy] = 0;
+
+        cout &lt;&lt; bfs(x, y, xx, yy) &lt;&lt; endl;
+
+        g[x][y] = 1, g[xx][yy] = 1;
+    &#125;
+
+    return 0;
+&#125;</code></pre>
+<h2 id="特征值-2"><a href="#特征值-2" class="headerlink" title="特征值"></a>特征值</h2><h3 id="题目描述-5"><a href="#题目描述-5" class="headerlink" title="题目描述"></a>题目描述</h3><p>最近捷宝学习了线性代数的知识，并成功在期末考试中获得了<strong>100</strong>分的好成绩。 </p>
+<p>  其中<strong>计算矩阵的特征值</strong>这一题型给他留下深刻印象。 </p>
+<p>  出于好奇心，他决定利用假期时间仔细钻研<strong>特征值</strong>这一概念。经过长达好多好多好多好多天的闭关研究，捷宝提出了<strong>整数的特征值</strong>这一概念。 </p>
+<p>  可爱的捷宝定义，对于任意</p>
+
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达，可以在下面评论区评论。 </span>
+    </div>
+</article>
+
+
+<p>
+    <a  class="dashang" onclick="dashangToggle()">💰</a>
+</p>
+
+
+
+
+
+
+    
+        <!-- MathJax配置，可通过单美元符号书写行内公式等 -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    "HTML-CSS": {
+        preferredFont: "TeX",
+        availableFonts: ["STIX","TeX"],
+        linebreaks: { automatic:true },
+        EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+        inlineMath: [ ["$", "$"], ["\\(","\\)"] ],
+        processEscapes: true,
+        ignoreClass: "tex2jax_ignore|dno",
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+        equationNumbers: { autoNumber: "AMS" },
+        noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } },
+        Macros: { href: "{}" }
+    },
+    messageStyle: "none"
+    });
+</script>
+<!-- 给MathJax元素添加has-jax class -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+<!-- 通过连接CDN加载MathJax的js代码 -->
+<script type="text/javascript" async
+        src="//cdn.jsdelivr.net/npm/mathjax@2.7.8/unpacked/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<input type="hidden" id="MathJax-js"
+        value="//cdn.jsdelivr.net/npm/mathjax@2.7.8/unpacked/MathJax.js?config=TeX-MML-AM_CHTML">
+</input>
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">
+    ©2016-2020 Yelog
+</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+
+<div class="hide_box" onclick="dashangToggle()"></div>
+<div class="shang_box">
+    <a class="shang_close"  onclick="dashangToggle()">×</a>
+    <div class="shang_tit">
+        <p>Help us with donation</p>
+    </div>
+    <div class="shang_payimg">
+        <div class="pay_img">
+            <img src="/img/alipay.jpg" class="alipay" title="扫码支持">
+            <img src="/img/weixin.jpg" class="weixin" title="扫码支持">
+        </div>
+    </div>
+    <div class="shang_payselect">
+        <span><label><input type="radio" name="pay" checked value="alipay">alipay</label></span><span><label><input type="radio" name="pay" value="weixin">weixin</label></span>
+    </div>
+</div>
+
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.1.0" ></script>
+
+<script src="/js/script.js?v=1.1.0" ></script>
+<script>
+    var img_resize = 'default';
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $("#post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+        $("input[name=pay]").on("click", function () {
+            if($("input[name=pay]:checked").val()=="weixin"){
+                $(".shang_box .shang_payimg .pay_img").addClass("weixin_img");
+            } else {
+                $(".shang_box .shang_payimg .pay_img").removeClass("weixin_img");
+            }
+        })
+        
+
+        /*高亮代码块行号*/
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+    function dashangToggle() {
+        $(".shang_box").fadeToggle();
+        $(".hide_box").fadeToggle();
+    }
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+
+    
+</style>
+
+
+
+
+
+
+
+</html>

@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>牛客小白月赛40-题解 | Hexo</title>
+  <meta name="keywords" content=" 编程之美 ">
+  <meta name="description" content="牛客小白月赛40-题解 | Hexo">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="啦啦啦">
+<meta property="og:type" content="website">
+<meta property="og:title" content="分类">
+<meta property="og:url" content="http://example.com/categories/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="啦啦啦">
+<meta property="og:locale">
+<meta property="article:published_time" content="2021-01-05T13:39:28.000Z">
+<meta property="article:modified_time" content="2021-09-18T02:38:21.675Z">
+<meta property="article:author" content="pigion">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="icon" href="/img/avatar.jpg">
+
+<link href="/css/style.css?v=1.1.0" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-dark.css?v=1.1.0" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" rel="stylesheet">
+
+<script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="/js/titleTip.js?v=1.1.0" ></script>
+
+<script src="//cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.1.0" ></script>
+
+<meta name="generator" content="Hexo 5.3.0"></head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="">
+  <input class="theme_blog_path" value="">
+  <input id="theme_shortcut" value="true" />
+  <input id="theme_highlight_on" value="true" />
+  <input id="theme_code_copy" value="true" />
+</div>
+
+
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/"
+   class="avatar_target">
+    <img class="avatar"
+         src="/img/avatar.jpg"/>
+</a>
+<div class="author">
+    <span>pigion</span>
+</div>
+
+<div class="icon">
+    
+        
+            <a title="jianshu"
+               href="https://www.jianshu.com/u/b6a6ac7901a8"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-jianshu"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="email"
+               href="mailto:354812696@qq.com"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-email"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="qq"
+               href="http://wpa.qq.com/msgrd?v=3&uin=354812696&site=qq&menu=yes"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-qq"></use>
+                    </svg>
+                
+            </a>
+        
+    
+</div>
+
+
+
+
+<ul>
+    <li>
+        <div class="all active" data-rel="All">All
+            
+                <small>(24)</small>
+            
+        </div>
+    </li>
+    
+        
+            
+                <li>
+                    <div data-rel="web前端">
+                        
+                        web前端
+                        <small>(2)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="数学建模">
+                        
+                        数学建模
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="制作游戏">
+                        
+                        制作游戏
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="ACM">
+                        
+                        ACM
+                        <small>(14)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="screep">
+                        
+                        screep
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="spider">
+                        
+                        spider
+                        <small>(4)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+        
+            
+            
+            
+    </div>
+    <div>
+        
+            <a class="about  hasFriend  site_url"
+               
+               href="/about">About</a>
+        
+        <a style="width: 50%"
+                
+                                           class="friends">Friends</a>
+        
+    </div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="24">
+
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        Links
+        <i class="iconfont icon-left"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="http://a-c-dream.github.io/">远佬</a></li>
+            
+            <li><a target="_blank" href="http://4het.github.io/">源佬</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <div class="right-top">
+        <div id="default-panel">
+            <i class="iconfont icon-search" data-title="搜索 快捷键 i"></i>
+            <div class="right-title">All</div>
+            <i class="iconfont icon-file-tree" data-title="切换到大纲视图 快捷键 w"></i>
+        </div>
+        <div id="search-panel">
+            <i class="iconfont icon-left" data-title="返回"></i>
+            <input id="local-search-input" />
+            <label class="border-line" for="input"></label>
+            <i class="iconfont icon-case-sensitive" data-title="大小写敏感"></i>
+            <i class="iconfont icon-tag" data-title="标签"></i>
+        </div>
+        <div id="outline-panel" style="display: none">
+            <div class="right-title">大纲</div>
+            <i class="iconfont icon-list" data-title="切换到文章列表"></i>
+        </div>
+    </div>
+
+    <div class="tags-list">
+    <input id="tag-search" />
+    <div class="tag-wrapper">
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>编程之美</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>前端三大件</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>game</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>���֮��</a>
+            </li>
+        
+    </div>
+
+</div>
+
+    
+    <nav id="title-list-nav">
+        
+        <a  class="All screep "
+           href="/2022/08/14/screaper-tutorial/"
+           data-tag="game"
+           data-author="" >
+            <span class="post-title" title="screaper_tutorial">screaper_tutorial</span>
+            <span class="post-date" title="2022-08-14 16:10:22">2022/08/14</span>
+        </a>
+        
+        <a  class="All spider "
+           href="/2022/07/07/spider-4/"
+           data-tag="���֮��"
+           data-author="" >
+            <span class="post-title" title="spider_4">spider_4</span>
+            <span class="post-date" title="2022-07-07 15:02:36">2022/07/07</span>
+        </a>
+        
+        <a  class="All spider "
+           href="/2022/07/06/spide-3/"
+           data-tag="���֮��"
+           data-author="" >
+            <span class="post-title" title="spide-3">spide-3</span>
+            <span class="post-date" title="2022-07-06 14:02:45">2022/07/06</span>
+        </a>
+        
+        <a  class="All "
+           href="/2022/07/06/%E5%B1%80%E9%83%A8%E6%95%8F%E6%84%9F%E5%93%88%E5%B8%8C%E7%AE%97%E6%B3%95/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="局部敏感哈希算法">局部敏感哈希算法</span>
+            <span class="post-date" title="2022-07-06 10:08:18">2022/07/06</span>
+        </a>
+        
+        <a  class="All spider "
+           href="/2022/07/03/spide-2/"
+           data-tag="编程之美"
+           data-author="" >
+            <span class="post-title" title="spide_2">spide_2</span>
+            <span class="post-date" title="2022-07-03 15:45:54">2022/07/03</span>
+        </a>
+        
+        <a  class="All spider "
+           href="/2022/07/01/spide-1/"
+           data-tag="编程之美"
+           data-author="" >
+            <span class="post-title" title="spide_1">spide_1</span>
+            <span class="post-date" title="2022-07-01 17:53:17">2022/07/01</span>
+        </a>
+        
+        <a  class="All ACM "
+           href="/2022/04/25/%E5%A4%A9%E6%A2%AF%E8%B5%9B%E6%AD%A3%E5%BC%8F%E8%B5%9B%E2%80%94%E2%80%94%E8%A1%A5%E9%A2%98/"
+           data-tag="编程之美"
+           data-author="" >
+            <span class="post-title" title="天梯赛正式赛——补题">天梯赛正式赛——补题</span>
+            <span class="post-date" title="2022-04-25 14:11:56">2022/04/25</span>
+        </a>
+        
+        <a  class="All ACM "
+           href="/2022/02/25/Educational-Codeforces-Round-123-Rated-for-Div-2-Writeup/"
+           data-tag="编程之美"
+           data-author="" >
+            <span class="post-title" title="Educational Codeforces Round 123 (Rated for Div. 2) Writeup">Educational Codeforces Round 123 (Rated for Div. 2) Writeup</span>
+            <span class="post-date" title="2022-02-25 13:47:36">2022/02/25</span>
+        </a>
+        
+        <a  class="All ACM "
+           href="/2022/01/21/%E7%AC%AC%E4%B9%9D%E5%B1%8A%E2%80%9C%E5%9B%BE%E7%81%B5%E6%9D%AF%E2%80%9DNEUQ-ACM%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AB%9E%E8%B5%9B%E4%B8%AA%E4%BA%BA%E8%B5%9B-%E9%A2%98%E8%A7%A3/"
+           data-tag="编程之美"
+           data-author="" >
+            <span class="post-title" title="第九届“图灵杯”NEUQ-ACM程序设计竞赛个人赛_题解">第九届“图灵杯”NEUQ-ACM程序设计竞赛个人赛_题解</span>
+            <span class="post-date" title="2022-01-21 20:43:49">2022/01/21</span>
+        </a>
+        
+        <a  class="All ACM "
+           href="/2021/11/08/%E7%89%9B%E5%AE%A2%E5%B0%8F%E7%99%BD%E6%9C%88%E8%B5%9B40-%E9%A2%98%E8%A7%A3/"
+           data-tag="编程之美"
+           data-author="" >
+            <span class="post-title" title="牛客小白月赛40-题解">牛客小白月赛40-题解</span>
+            <span class="post-date" title="2021-11-08 20:15:55">2021/11/08</span>
+        </a>
+        
+        <a  class="All ACM "
+           href="/2021/10/19/2021-%E5%9B%9B%E5%B7%9D%E7%9C%81%E8%B5%9B-%E9%A2%98%E8%A7%A3/"
+           data-tag="编程之美"
+           data-author="" >
+            <span class="post-title" title="2021 四川省赛--题解">2021 四川省赛--题解</span>
+            <span class="post-date" title="2021-10-19 19:15:29">2021/10/19</span>
+        </a>
+        
+        <a  class="All ACM "
+           href="/2021/10/19/2021-CCPC-%E9%A2%98%E8%A7%A3/"
+           data-tag="编程之美"
+           data-author="" >
+            <span class="post-title" title="2021 CCPC--题解">2021 CCPC--题解</span>
+            <span class="post-date" title="2021-10-19 19:14:55">2021/10/19</span>
+        </a>
+        
+        <a  class="All ACM "
+           href="/2021/10/02/2021%20ICPC-%E7%BD%91%E7%BB%9C%E8%B5%9B%E7%AC%AC%E4%BA%8C%E5%9C%BA-%E9%A2%98%E8%A7%A3/"
+           data-tag="编程之美"
+           data-author="" >
+            <span class="post-title" title="ICPC-网络赛第二场-题解">ICPC-网络赛第二场-题解</span>
+            <span class="post-date" title="2021-10-02 08:07:48">2021/10/02</span>
+        </a>
+        
+        <a  class="All ACM "
+           href="/2021/09/22/2021%20ICPC-%E7%BD%91%E7%BB%9C%E8%B5%9B%E7%AC%AC%E4%B8%80%E5%9C%BA-%E9%A2%98%E8%A7%A3/"
+           data-tag="编程之美"
+           data-author="" >
+            <span class="post-title" title="ICPC_网络赛第一场_补题">ICPC_网络赛第一场_补题</span>
+            <span class="post-date" title="2021-09-22 22:57:39">2021/09/22</span>
+        </a>
+        
+        <a  class="All ACM "
+           href="/2021/09/16/%E7%BA%A6%E7%91%9F%E5%A4%AB%E7%8E%AF-C-%E6%B1%82%E8%A7%A3/"
+           data-tag="编程之美"
+           data-author="" >
+            <span class="post-title" title="约瑟夫环 C++求解">约瑟夫环 C++求解</span>
+            <span class="post-date" title="2021-09-16 15:37:39">2021/09/16</span>
+        </a>
+        
+        <a  class="All 数学建模 "
+           href="/2021/08/30/Matlab-%E8%AF%AD%E6%B3%95/"
+           data-tag="编程之美"
+           data-author="" >
+            <span class="post-title" title="Matlab 语法">Matlab 语法</span>
+            <span class="post-date" title="2021-08-30 18:59:06">2021/08/30</span>
+        </a>
+        
+        <a  class="All ACM "
+           href="/2021/06/05/ACM%E9%98%9F%E5%86%85%E6%AF%94%E8%B5%9B%E8%A1%A5%E9%A2%98%EF%BC%88%E5%9B%9B%EF%BC%89/"
+           data-tag="编程之美"
+           data-author="" >
+            <span class="post-title" title="ACM队内比赛补题（四）">ACM队内比赛补题（四）</span>
+            <span class="post-date" title="2021-06-05 16:04:30">2021/06/05</span>
+        </a>
+        
+        <a  class="All ACM "
+           href="/2021/05/29/ACM%E9%98%9F%E5%86%85%E6%AF%94%E8%B5%9B%E8%A1%A5%E9%A2%98%EF%BC%88%E4%B8%89%EF%BC%89/"
+           data-tag="编程之美"
+           data-author="" >
+            <span class="post-title" title="ACM队内比赛补题（三）">ACM队内比赛补题（三）</span>
+            <span class="post-date" title="2021-05-29 20:15:29">2021/05/29</span>
+        </a>
+        
+        <a  class="All ACM "
+           href="/2021/05/23/ACM%E9%98%9F%E5%86%85%E6%AF%94%E8%B5%9B%E8%A1%A5%E9%A2%98%EF%BC%88%E4%BA%8C%EF%BC%89/"
+           data-tag="编程之美"
+           data-author="" >
+            <span class="post-title" title="ACM队内比赛补题（二）">ACM队内比赛补题（二）</span>
+            <span class="post-date" title="2021-05-23 10:54:22">2021/05/23</span>
+        </a>
+        
+        <a  class="All ACM "
+           href="/2021/05/17/2021%E5%A4%A9%E6%A2%AF%E8%B5%9B%E8%A1%A5%E9%A2%98/"
+           data-tag="编程之美"
+           data-author="" >
+            <span class="post-title" title="2021天梯赛补题">2021天梯赛补题</span>
+            <span class="post-date" title="2021-05-17 17:26:53">2021/05/17</span>
+        </a>
+        
+        <a  class="All ACM "
+           href="/2021/05/16/ACM%E9%98%9F%E5%86%85%E6%AF%94%E8%B5%9B%E8%A1%A5%E9%A2%98%EF%BC%88%E4%B8%80%EF%BC%89/"
+           data-tag="编程之美"
+           data-author="" >
+            <span class="post-title" title="ACM队内比赛补题（一）">ACM队内比赛补题（一）</span>
+            <span class="post-date" title="2021-05-16 12:17:58">2021/05/16</span>
+        </a>
+        
+        <a  class="All web前端 "
+           href="/2021/02/17/CSS/"
+           data-tag="前端三大件"
+           data-author="" >
+            <span class="post-title" title="CSS">CSS</span>
+            <span class="post-date" title="2021-02-17 13:29:34">2021/02/17</span>
+        </a>
+        
+        <a  class="All web前端 "
+           href="/2021/01/20/HTML/"
+           data-tag="前端三大件"
+           data-author="" >
+            <span class="post-title" title="HTML">HTML</span>
+            <span class="post-date" title="2021-01-20 17:35:54">2021/01/20</span>
+        </a>
+        
+        <a  class="All 制作游戏 "
+           href="/2021/01/20/%E9%A9%AC%E9%87%8C%E5%A5%A5%E6%B8%B8%E6%88%8F%E5%88%B6%E4%BD%9C/"
+           data-tag="编程之美"
+           data-author="" >
+            <span class="post-title" title="马里奥游戏制作">马里奥游戏制作</span>
+            <span class="post-date" title="2021-01-20 17:35:54">2021/01/20</span>
+        </a>
+        
+        <div id="no-item-tips">
+
+        </div>
+    </nav>
+    <div id="outline-list">
+    </div>
+</div>
+    </div>
+    <div class="hide-list">
+        <div class="semicircle" data-title="切换全屏 快捷键 s">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div id="post">
+    <div class="pjax">
+        <article id="post-牛客小白月赛40-题解" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">牛客小白月赛40-题解</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="ACM">ACM</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color5">编程之美</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+            Created At : <time class="date" title='Updated At: 2021-11-08 22:29:43'>2021-11-08 20:15</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        
+        <span id="busuanzi_container_page_pv">
+            Views 👀 :<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%86%E7%BB%84"><span class="toc-text">分组</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0"><span class="toc-text">题目描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BE%93%E5%85%A5"><span class="toc-text">输入</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BE%93%E5%87%BA"><span class="toc-text">输出</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A0%B7%E4%BE%8B"><span class="toc-text">样例</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF"><span class="toc-text">解题思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#AC%E4%BB%A3%E7%A0%81"><span class="toc-text">AC代码</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%87%E6%A1%A5"><span class="toc-text">过桥</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0-1"><span class="toc-text">题目描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BE%93%E5%85%A5-1"><span class="toc-text">输入</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BE%93%E5%87%BA-1"><span class="toc-text">输出</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A0%B7%E4%BE%8B-1"><span class="toc-text">样例</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Example-1"><span class="toc-text">Example 1</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Example-2"><span class="toc-text">Example 2</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF-1"><span class="toc-text">解题思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#AC%E4%BB%A3%E7%A0%81-1"><span class="toc-text">AC代码</span></a></li></ol></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="分组"><a href="#分组" class="headerlink" title="分组"></a>分组</h2><h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p>dd 当上了宣传委员，开始组织迎新晚会，已知班里有 n 个同学，每个同学有且仅有一个擅长的声部，把同学们分成恰好 m 组，为了不搞砸节目，每一组里的同学都必须擅长同一个声部，当然，不同组同学擅长同一个声部的情况是可以出现的，毕竟一个声部也可以分成好几个 part 进行表演，但是他不希望出现任何一组的人过多，否则可能会导致场地分配不协调，也就是说，她希望人数最多的小组的人尽可能少，除此之外，对组内人员分配没有其他要求，她希望你告诉她，这个值是多少，如果无法顺利安排，请输出 -1</p>
+<h3 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h3><p>第一行两个数个数 n, m ( 1 ≤ m ≤ n ≤ 100000 )表示人数<br>接下来一行 n 个数, a[i] ( 1 ≤ a[i] ≤ n )表示第 i 个学生的擅长声部</p>
+<h3 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h3><p>输出一个数，表示人数最多的小组的人数</p>
+<h3 id="样例"><a href="#样例" class="headerlink" title="样例"></a>样例</h3><p><strong>Input</strong></p>
+<pre><code class="C++">5 3
+2 2 3 3 3</code></pre>
+<p><strong>Output</strong></p>
+<pre><code class="C++">2</code></pre>
+<h3 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h3><ol>
+<li>题意很简单，但不太好想去二分</li>
+<li>先统计每一组的人数，并进行特判</li>
+<li>然后以每组人数的最大值作为二分对象，从 n / 2 开始不断二分找最后组数 == m的数</li>
+</ol>
+<h3 id="AC代码"><a href="#AC代码" class="headerlink" title="AC代码"></a>AC代码</h3><pre><code class="c++">#include &lt;iostream&gt;
+#include &lt;algorithm&gt;
+
+using namespace std;
+
+const int N = 1e5 + 10;
+
+int a[N], g[N], cnt[N];
+
+int n, m, k;
+
+bool check(int x)
+&#123;
+    int group = 0;
+    for (int i = 0; i &lt; k; i ++ )
+    &#123;
+        group += cnt[i] / x + bool(cnt[i] % x);//上取整
+    &#125;
+
+    if (group &lt;= m) return true;//要找组数 == m 的，&lt;=、&gt;=都可，但 l，r 的取值会变
+    else return false;
+&#125;
+
+int main()
+&#123;
+    cin &gt;&gt; n &gt;&gt; m;
+
+    for (int i = 0; i &lt; n; i ++ )
+    &#123;
+        scanf(&quot;%d&quot;, &amp;a[i]);
+        g[a[i]] ++ ;
+    &#125;
+
+    for (int i = 0; i &lt; n; i ++ )
+    &#123;
+        if(g[i]) cnt[k ++ ] = g[i];//用新的数组去存每一组及其人数
+    &#125;
+
+    if (k &gt; m)//分的组大于已有的组数，无法分组
+    &#123;
+        puts(&quot;-1&quot;);
+        return 0;
+    &#125;
+
+    int l = 0, r = n - 1;
+    while (l &lt; r)
+    &#123;
+        int mid = l + r &gt;&gt; 1;// mid 为 每组人数的最大值
+        if (check(mid)) r = mid;
+        else l = mid + 1;
+    &#125;
+
+    cout &lt;&lt; r &lt;&lt; endl;
+
+    return 0;
+&#125;</code></pre>
+<h2 id="过桥"><a href="#过桥" class="headerlink" title="过桥"></a>过桥</h2><h3 id="题目描述-1"><a href="#题目描述-1" class="headerlink" title="题目描述"></a>题目描述</h3><p>dd 被困在了一个迷幻森林，现在她面前有一条凶险的大河，河中央有 n 个神奇的浮块，浮块按 1 ∼ n 顺序标号，但两两并不相接，第 i 个浮块上有一个数字 a[i] ，可能是正数，也可能是负数,每块浮块都附带一个魔法结界用于传送，当 a[i] 为正数时，dd 可以选择传送到第 i + k ( 1 ≤ k ≤ a[i] )个浮块上,当 dd 抵达 n 号浮块时才可以顺利脱身，显然不管 a[n] 是多少，都没有任何意义，当 a[i] 为负时，dd 只能选择标号小于等于  i + a[i]  的任意一块浮块进行传送，当 i + a[i] &lt; 1 时，默认只能传送到 1 的位置，每次传送都会花费1s的时间，随着时间的流逝，迷雾森林的空气会被逐渐榨干，她现在在1号浮块，她想知道，她最快多久能顺利脱身，如果始终无法逃脱，请输出 −1</p>
+<h3 id="输入-1"><a href="#输入-1" class="headerlink" title="输入"></a>输入</h3><p>第一行一个数 n ( 2 ≤ n ≤ 2000 )<br>接下来一行n个数a[i] (1≤|a[i]|≤2000)表示浮块上的数字</p>
+<h3 id="输出-1"><a href="#输出-1" class="headerlink" title="输出"></a>输出</h3><p>输出一行，表示对应的答案</p>
+<h3 id="样例-1"><a href="#样例-1" class="headerlink" title="样例"></a>样例</h3><h4 id="Example-1"><a href="#Example-1" class="headerlink" title="Example 1"></a>Example 1</h4><p><strong>Input</strong></p>
+<pre><code class="C++">4
+2 2 -1 2</code></pre>
+<p><strong>Output</strong></p>
+<pre><code class="C++">2</code></pre>
+<p><strong>Note</strong></p>
+<pre><code class="reStructuredText">1跳到2,1s
+2跳到4,1s
+共2s </code></pre>
+<h4 id="Example-2"><a href="#Example-2" class="headerlink" title="Example 2"></a>Example 2</h4><p><strong>Input</strong></p>
+<pre><code class="C++">2
+-1 -2</code></pre>
+<p><strong>Output</strong></p>
+<pre><code class="c++">-1</code></pre>
+<h3 id="解题思路-1"><a href="#解题思路-1" class="headerlink" title="解题思路"></a>解题思路</h3><ol>
+<li>一看就知道是DP</li>
+<li>状态表示：dp[i] ：表示在第 i 个点到终点的步数（求最小值）</li>
+<li>状态计算：dp[i] = min(dp[i], dp[j + 1])（ j 为 i 点能到达的地方）[从后往前]</li>
+<li>特判：a[i] 为负数的情况不用考虑</li>
+</ol>
+<h3 id="AC代码-1"><a href="#AC代码-1" class="headerlink" title="AC代码"></a>AC代码</h3><pre><code class="c++">#include &lt;iostream&gt;
+#include &lt;cstring&gt;
+
+using namespace std;
+
+const int N = 2010;
+
+int a[N], dp[N];
+
+int main()
+&#123;
+    int n;
+    cin &gt;&gt; n;
+
+    for (int i = 1; i &lt;= n; i ++ )//除了 -1, 0，0x3f3f3f3f 以外，其它都不能用 memset
+        dp[i] = 100000;
+
+    for (int i = 1; i &lt;= n; i ++ )
+    &#123;
+        scanf(&quot;%d&quot;, &amp;a[i]);   
+        if (i + a[i] &gt;= n) dp[i] = 1; //欲处理出能直接到达终点的转移站 
+    &#125;
+
+    for (int i = n - 1; i &gt;= 1; i -- )//从后往前 处理 从该点到后面点的步数
+    &#123;
+        if (a[i] &lt; 0) continue;//易推，不能走小于零的点
+        int cnt = i + a[i];
+
+        for (int j = i; j &lt;= cnt; j ++ )//从后往前的每个中转站 向后逐个更新可到达的点数的步数
+            dp[i] = min(dp[i], dp[j] + 1);
+    &#125;
+
+    if(dp[1] == 100000) puts(&quot;-1&quot;);
+    else cout &lt;&lt; dp[1] &lt;&lt; endl;
+
+    return 0;
+&#125;</code></pre>
+
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达，可以在下面评论区评论。 </span>
+    </div>
+</article>
+
+
+<p>
+    <a  class="dashang" onclick="dashangToggle()">💰</a>
+</p>
+
+
+
+
+
+
+    
+        <!-- MathJax配置，可通过单美元符号书写行内公式等 -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    "HTML-CSS": {
+        preferredFont: "TeX",
+        availableFonts: ["STIX","TeX"],
+        linebreaks: { automatic:true },
+        EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+        inlineMath: [ ["$", "$"], ["\\(","\\)"] ],
+        processEscapes: true,
+        ignoreClass: "tex2jax_ignore|dno",
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+        equationNumbers: { autoNumber: "AMS" },
+        noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } },
+        Macros: { href: "{}" }
+    },
+    messageStyle: "none"
+    });
+</script>
+<!-- 给MathJax元素添加has-jax class -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+<!-- 通过连接CDN加载MathJax的js代码 -->
+<script type="text/javascript" async
+        src="//cdn.jsdelivr.net/npm/mathjax@2.7.8/unpacked/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<input type="hidden" id="MathJax-js"
+        value="//cdn.jsdelivr.net/npm/mathjax@2.7.8/unpacked/MathJax.js?config=TeX-MML-AM_CHTML">
+</input>
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">
+    ©2016-2020 Yelog
+</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+
+<div class="hide_box" onclick="dashangToggle()"></div>
+<div class="shang_box">
+    <a class="shang_close"  onclick="dashangToggle()">×</a>
+    <div class="shang_tit">
+        <p>Help us with donation</p>
+    </div>
+    <div class="shang_payimg">
+        <div class="pay_img">
+            <img src="/img/alipay.jpg" class="alipay" title="扫码支持">
+            <img src="/img/weixin.jpg" class="weixin" title="扫码支持">
+        </div>
+    </div>
+    <div class="shang_payselect">
+        <span><label><input type="radio" name="pay" checked value="alipay">alipay</label></span><span><label><input type="radio" name="pay" value="weixin">weixin</label></span>
+    </div>
+</div>
+
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.1.0" ></script>
+
+<script src="/js/script.js?v=1.1.0" ></script>
+<script>
+    var img_resize = 'default';
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $("#post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+        $("input[name=pay]").on("click", function () {
+            if($("input[name=pay]:checked").val()=="weixin"){
+                $(".shang_box .shang_payimg .pay_img").addClass("weixin_img");
+            } else {
+                $(".shang_box .shang_payimg .pay_img").removeClass("weixin_img");
+            }
+        })
+        
+
+        /*高亮代码块行号*/
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+    function dashangToggle() {
+        $(".shang_box").fadeToggle();
+        $(".hide_box").fadeToggle();
+    }
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+
+    
+</style>
+
+
+
+
+
+
+
+</html>
